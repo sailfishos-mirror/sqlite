@@ -1,5 +1,5 @@
-C Fix\sOMIT_CONCURRENT\sbuilds\son\sthis\sbranch.
-D 2026-02-20T18:27:02.921
+C Add\sfurther\stests\sfor\sthe\sBEGIN\sCONCURRENT\sextension\son\sthis\sbranch.
+D 2026-02-23T11:42:16.203
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1011,6 +1011,7 @@ F test/concurrentA.test 2272fecbf128ac5a8d7b0c9cfe732c4935a5a1b915e237c93ef8dce3
 F test/concurrentB.test b85e8adc4c1acf9b1cc0e8c2012348dc116d4ce032bb699d039f10de9b4cca71
 F test/concurrentC.test fd85071ee3792a1fe9c7faf5cdf70a338cdb1aeaa127ba6d1394db84b8fe0dbe
 F test/concurrentD.test ded9c6e975af21652717afb87c8632395610372bc276d1efa701af05233f0c69
+F test/concurrentE.test 590d6f496bc0fd2fa354ec1a913dde2c88ad38ba382fe7b4263caa0fce2fca3e
 F test/conflict.test 3307ffdf988e04b01c4e942d8aa369a977f085bf629f43a627c9a77f39d65926
 F test/conflict2.test 5557909ce683b1073982f5d1b61dfb1d41e369533bfdaf003180c5bc87282dd1
 F test/conflict3.test 81865d9599609aca394fb3b9cd5f561d4729ea5b176bece3644f6ecb540f88ac
@@ -2238,8 +2239,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 9202cd04f74ae69bb82c6574c2259d270ae35c9476cccc2e20f3c1f9c8a6c995
-R 5a7bc9e12a953155b053b6e3af37cb59
+P 461907251e63055b6ecb56ae8b687c6cead6bf0870a78d50855c54568e2f2391
+R 2f5a7668700f2f9dbb7c7efd461f47e5
 U dan
-Z 1f713f7a76b880e3040163159533c150
+Z 0c4d66a3f3d358a25605cdaaf8257b68
 # Remove this line to create a well-formed Fossil manifest.
