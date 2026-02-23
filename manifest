@@ -1,5 +1,5 @@
-C Add\stest\scases\sfor\sthe\ssymlink\sdefenses\sof\sthe\sprevious\scheck-in.
-D 2026-02-23T13:29:29.514
+C Fix\san\sassert()\sthat\sis\sincorrect\swhen\sthe\sSQLITE_DBCONFIG_FP_DIGITS\ssetting\nis\son\sa\snon-default\svalue.
+D 2026-02-23T19:51:54.706
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -811,7 +811,7 @@ F src/vdbeInt.h 42488247a80cd9d300627833c6c85ace067ae5011a99e7614e2358130d62feea
 F src/vdbeapi.c 6cdcbe5c7afa754c998e73d2d5d2805556268362914b952811bdfb9c78a37cf1
 F src/vdbeaux.c 396d38a62a357b807eabae0cae441fc89d2767a57ab08026b7072bf7aa2dd00c
 F src/vdbeblob.c b3f0640db9642fbdc88bd6ebcc83d6009514cafc98f062f675f2c8d505d82692
-F src/vdbemem.c 565c214150dbab0678bfb04db5488f1788df87aad4ec3ec71cc61e0eb3f18f38
+F src/vdbemem.c 2eddebf6403f2811c7049ddbb1dd96d5f63617b39fcbaa2384009a45b2269006
 F src/vdbesort.c b69220f4ea9ffea5fdef34d968c60305444eea909252a81933b54c296d9cca70
 F src/vdbetrace.c 49e689f751505839742f4a243a1a566e57d5c9eaf0d33bbaa26e2de3febf7b41
 F src/vdbevtab.c fc46b9cbd759dc013f0b3724549cc0d71379183c667df3a5988f7e2f1bd485f3
@@ -2195,8 +2195,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 7cced53e8c508fbf1816162c5358c77a712f76a38fd18f07171efc3c028a3c57
-R 759eaf7b561ab385ab020df9b6f9eba9
+P 5da9bf09cc00faf98cc515fb5a10a0af325b8f7608893808d031dfef62380be2
+R 281306f1efa2da650e12d075418cdbc9
 U drh
-Z 1cdbe80a45cdf36eafc051b6689caa6d
+Z a61e6702dddced0a140b817d52fd7496
 # Remove this line to create a well-formed Fossil manifest.
