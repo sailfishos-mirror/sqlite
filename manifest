@@ -1,5 +1,5 @@
-C Rename\sSQLITE_ENABLE_MULTITHREADED_CHECKS\sto\sSQLITE_THREAD_MISUSE_WARNINGS.\nRun\stest\scases\swith\sthat\soption.\sAlso\sadd\sthe\nSQLITE_THREAD_MISUSE_ABORT\soption.
-D 2026-02-24T19:37:16.964
+C Adjust\sthe\schanges\sto\sshell8.test\sfrom\s[5da9bf09cc00faf9]\sso\sthat\sthey\nwork\swith\solder\sversions\sof\sTCL.
+D 2026-02-24T19:50:27.370
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1626,7 +1626,7 @@ F test/shell4.test e25580a792b7b54560c3a76b6968bd8189261f38979fe28e6bc6312c5db28
 F test/shell5.test a9cd2c8b62e125049ef500937674f47dd6787f0157ac0515aa554044a4dc3ea9
 F test/shell6.test e3b883b61d4916b6906678a35f9d19054861123ad91b856461e0a456273bdbb8
 F test/shell7.test 43fd8e511c533bab5232e95c7b4be93b243451709e89582600d4b6e67693d5c3
-F test/shell8.test fc3b6ca51ffba9b4b658d4c65a07b50338a2b592a276a66b8464be448d0f5e30
+F test/shell8.test 38c9e4d7e85d2a3ecfacaa9f6cda4f7a81bf4fffb5f3f37f9cd76827c6883192
 F test/shell9.test 8742a5b390cdcef6369f5aa223e415aa4255a4129ef249b177887dc635a87209
 F test/shellA.test 05cdaafa1f79913654487ce3aefa038d4106245d58f52e02faf506140a76d480
 F test/shellB.test b2afd5c28aba750c066996a082210d6a4fcab8fd042cad076d9c1023164af9b1
@@ -2195,8 +2195,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 3ca1ed81c4fa41f5f9fdbebf0929dd8421a4e29f95764fe1027d4d8706a41480
-R 5c6421821f79cf8e5629e0b605fa5e03
+P be8c8b9cb7b618a1571a988bc1cfdc15d99a8bf144d699385c0076e940b9f7f5
+R 09366efa0ae6da108ede7866c4a5981c
 U drh
-Z f5b0ef52b5c43aa0e22df96a7972ea83
+Z 5db1abeb187d1d013a8be468216382aa
 # Remove this line to create a well-formed Fossil manifest.
