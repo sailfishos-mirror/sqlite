@@ -1,5 +1,5 @@
-C Adjust\sthe\schanges\sto\sshell8.test\sfrom\s[5da9bf09cc00faf9]\sso\sthat\sthey\nwork\swith\solder\sversions\sof\sTCL.
-D 2026-02-24T19:50:27.370
+C Use\sa\s64-bit\shash\sfor\sthe\stesting\soption\sSQLITE_CHECK_PAGES\sto\smaintain\npage\salignment.
+D 2026-02-25T01:04:22.306
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -726,11 +726,11 @@ F src/os_setup.h 8efc64eda6a6c2f221387eefc2e7e45fd5a3d5c8337a7a83519ba4fbd2957ae
 F src/os_unix.c dcf7988ddbdd68619b821c9a722f9377abb46f1d26c9279eb5a50402fd43d749
 F src/os_win.c 0d553b6e8b92c8eb85e7f1b4a8036fe8638c8b32c9ad8d9d72a861c10f81b4c5
 F src/os_win.h 5e168adf482484327195d10f9c3bce3520f598e04e07ffe62c9c5a8067c1037b
-F src/pager.c a81461de271ac4886ad75b7ca2cca8157a48635820c4646cd2714acdc2c17e5f
+F src/pager.c fe34fd22ec251436985d7b6ebdd05bf238a17901c2cb23d3d28974dd2361a912
 F src/pager.h 6137149346e6c8a3ddc1eeb40aee46381e9bc8b0fcc6dda8a1efde993c2275b8
 F src/parse.y 7c2184b5665c671258c4e96a10bbc9dbf7e1ede462ebc4e614249de0d54c8a26
 F src/pcache.c 588cc3c5ccaaadde689ed35ce5c5c891a1f7b1f4d1f56f6cf0143b74d8ee6484
-F src/pcache.h 1497ce1b823cf00094bb0cf3bac37b345937e6f910890c626b16512316d3abf5
+F src/pcache.h 092b758d2c5e4dabb30eae46d8dfad77c0f70b16bf3ff1943f7a232b0fe0d4ba
 F src/pcache1.c 131ca0daf4e66b4608d2945ae76d6ed90de3f60539afbd5ef9ec65667a5f2fcd
 F src/pragma.c ecec75795c1821520266e4f93fa8840cce48979af532db06f085e36a7813860f
 F src/prepare.c f6a6e28a281bd1d1da12f47d370a81af46159b40f73bf7fa0b276b664f9c8b7d
@@ -2195,8 +2195,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P be8c8b9cb7b618a1571a988bc1cfdc15d99a8bf144d699385c0076e940b9f7f5
-R 09366efa0ae6da108ede7866c4a5981c
+P c3b9e2cee3565da50bcc92766f700c31142391a697cbab7465774cf20a307dd8
+R f3287272bab54c42208ca20f46460827
 U drh
-Z 5db1abeb187d1d013a8be468216382aa
+Z 3c6ddaa5a6b8277e3edc3f70592591fc
 # Remove this line to create a well-formed Fossil manifest.
