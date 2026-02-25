@@ -1,5 +1,5 @@
-C Use\sa\s64-bit\shash\sfor\sthe\stesting\soption\sSQLITE_CHECK_PAGES\sto\smaintain\npage\salignment.
-D 2026-02-25T01:04:22.306
+C Reinstant\sthe\swork-around\sfor\s[https://gcc.gnu.org/bugzilla/show_bug.cgi?id=96270|GCC\scompiler\sbug\s96270]\nwhich\sis\sapparently\sstill\san\sissue\sas\sof\sgcc\s13.3.0\swith\s-m32\son\sMint\sLinux.\nThe\stest\scase\sin\sthe\sbug\sreport\sis\sfixed,\sbut\sthe\svdbeMemRenderNum()\sroutine\nin\sSQLite\sstill\sshows\sthe\sproblem.
+D 2026-02-25T12:44:19.970
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -811,7 +811,7 @@ F src/vdbeInt.h 42488247a80cd9d300627833c6c85ace067ae5011a99e7614e2358130d62feea
 F src/vdbeapi.c 6cdcbe5c7afa754c998e73d2d5d2805556268362914b952811bdfb9c78a37cf1
 F src/vdbeaux.c 396d38a62a357b807eabae0cae441fc89d2767a57ab08026b7072bf7aa2dd00c
 F src/vdbeblob.c b3f0640db9642fbdc88bd6ebcc83d6009514cafc98f062f675f2c8d505d82692
-F src/vdbemem.c 2eddebf6403f2811c7049ddbb1dd96d5f63617b39fcbaa2384009a45b2269006
+F src/vdbemem.c 401a320db404ce7e51f94a69cca30b2737d74d3b8e9ab272287cbfccdc9ffd10
 F src/vdbesort.c b69220f4ea9ffea5fdef34d968c60305444eea909252a81933b54c296d9cca70
 F src/vdbetrace.c 49e689f751505839742f4a243a1a566e57d5c9eaf0d33bbaa26e2de3febf7b41
 F src/vdbevtab.c fc46b9cbd759dc013f0b3724549cc0d71379183c667df3a5988f7e2f1bd485f3
@@ -2195,8 +2195,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P c3b9e2cee3565da50bcc92766f700c31142391a697cbab7465774cf20a307dd8
-R f3287272bab54c42208ca20f46460827
+P 75a35cd8f97f8a6cd2311c829685bd3b1cfb394de15174aef347f15cfb1913a1
+R a056b439b6d5d9d4c93ec16898c6d538
 U drh
-Z 3c6ddaa5a6b8277e3edc3f70592591fc
+Z e627ce35647ad04f6d121e351748c96b
 # Remove this line to create a well-formed Fossil manifest.
