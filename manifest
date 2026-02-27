@@ -1,5 +1,5 @@
-C Another\snano-optimization\sin\skvvfs\sv2.
-D 2026-02-27T06:33:28.814
+C Add\san\sassert()\sto\ssqlite3RegisterLikeFunctions()\sto\shopefully\sprevent\nfuture\sfalse-positive\sbug\sreports\scoming\sout\sof\sCodeQL.
+D 2026-02-27T11:36:43.172
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -692,7 +692,7 @@ F src/delete.c 901499bed747c3b4b2be45be1abe912ba50a3f6a40ba88cc006ccf279f2d0e97
 F src/expr.c 8c3b23cb35f43c2d0570c1058b9a269e561e769e09c81ba192992c95022c1939
 F src/fault.c 460f3e55994363812d9d60844b2a6de88826e007
 F src/fkey.c fb0f74c57d19a2d3f113f3476826919d68feda7ff334abfdb479a9a6353b9fcd
-F src/func.c 785f62a6e00636c9b185ccee0cde17be711458227340137d57492ed3226d4253
+F src/func.c 6e7de3551ae0f8205006e5109f025223246edd20186d54d90746dee7c1c5c093
 F src/global.c a19e4b1ca1335f560e9560e590fc13081e21f670643367f99cb9e8f9dc7d615b
 F src/hash.c 03c8c0f4be9e8bcb6de65aa26d34a61d48a9430747084a69f9469fbb00ea52ca
 F src/hash.h 46b92795a95bfefb210f52f0c316e9d7cdbcdd7e7fcfb0d8be796d3a5767cddf
@@ -2195,8 +2195,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 56edf2addb155dbb60269fe563ecb5f6132672c6c61f6f9d18ebdff72111298d
-R 5b3bfeee546454189a63527edef767f3
-U stephan
-Z 4baa500c382a22f693cae8a172359fdd
+P a9d60190d693504742a894918f145111908d7d6cb9e853ba7a2356529046372a
+R 373fdc5fd31bcf352858ec23ef321693
+U drh
+Z b04ae17c992b424e316fba8939b5712f
 # Remove this line to create a well-formed Fossil manifest.
