@@ -1,5 +1,5 @@
-C Fix\stypos\sin\sthe\sSQLITE_PREPARE_FROM_DDL\sdocumentation.
-D 2026-02-26T16:19:21.240
+C An\sinitial\scopy/paste\sstub\sfor\sexperimenting\swith\susing\sWebLocks\sfor\sa\snew\scopy\sof\sthe\sOPFS\svfs.\sThis\sis\snot\syet\sfunctional,\sor\seven\sloading,\sbut\sneeds\sstashing\sto\savoid\spotential\sloss.
+D 2026-02-27T03:11:40.358
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -605,6 +605,7 @@ F ext/wasm/api/sqlite3-opfs-async-proxy.js 92d6d327a862f1627ff3e88e60fdfea9def06
 F ext/wasm/api/sqlite3-vfs-helper.c-pp.js 3f828cc66758acb40e9c5b4dcfd87fd478a14c8fb7f0630264e6c7fa0e57515d
 F ext/wasm/api/sqlite3-vfs-kvvfs.c-pp.js 17b16db29e2e0c75d00f675c17710539269e30f853da6bac9044879e298c270f
 F ext/wasm/api/sqlite3-vfs-opfs-sahpool.c-pp.js 1575ea6bbcf2da1e6df6892c17521a0c1c1c199a672e9090176ea0b88de48bd9
+F ext/wasm/api/sqlite3-vfs-opfs-wl.c-pp.js 38484644c21b21b97f60979dddd620e47bdba628bde4ae62b6ce8859870e4f85
 F ext/wasm/api/sqlite3-vfs-opfs.c-pp.js 88ce2078267a2d1af57525a32d896295f4a8db7664de0e17e82dc9ff006ed8d3
 F ext/wasm/api/sqlite3-vtab-helper.c-pp.js 366596d8ff73d4cefb938bbe95bc839d503c3fab6c8335ce4bf52f0d8a7dee81
 F ext/wasm/api/sqlite3-wasm.c 45bb20e19b245136711f9b78584371233975811b6560c29ed9b650e225417e29
@@ -2195,8 +2196,11 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P c3288f16848866a2c846221c33631785f7b39938078bb95c61895f789395aa1d
-R dcd62261fc7d31c8a65dd3cc5d14fd76
-U drh
-Z de1179cfcfccba649912303467a12236
+P 9174e7dacf867c1f80e73ccf5e0ee7b9e84fbe9f2e53559d06b72206b1cde3c6
+R b825f5f5f6b51df161046dc5b5c20e5a
+T *branch * opfs-wl
+T *sym-opfs-wl *
+T -sym-trunk * Cancelled\sby\sbranch.
+U stephan
+Z 7cdbae53834e92d0f15d611fc35ab500
 # Remove this line to create a well-formed Fossil manifest.
