@@ -1,5 +1,5 @@
-C Fix\san\sOOB\sread\sin\sthe\sincremental\sintegrity-check\sextension.
-D 2026-03-01T22:36:02.371
+C New\sfloating-point\stest\scase.
+D 2026-03-01T23:01:17.452
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1132,6 +1132,7 @@ F test/fork-test.c 9ac2e6423a1d38df3d6be0e8ac15608b545de21e2b19d9d876254c5931b63
 F test/format4.test eeae341953db8b6bda7f549044797c3278a6cc345d11ada81471671b654f8ef4
 F test/fp-speed-1.c b37de94eba034e1703668816225f54510ec60fb0685406608cc707afe6b8234d
 F test/fpconv1.test 63f352682fa65601a326563ad633086df6ab194e6ed5e7366786f38a525a7fd7
+F test/fptest01.sql 73caa1c71ff0d74d5e76d9ad98d9c4a26f3d928f3cd7f737196cf209dffe7cae
 F test/fts-9fd058691.test 78b887e30ae6816df0e1fed6259de4b5a64ad33c
 F test/fts3.test 672a040ea57036fb4b6fdc09027c18d7d24ab654
 F test/fts3_common.tcl dffad248f9ce090800e272017d2898005c28ee6314fc1dd5550643a02666907a
@@ -1630,7 +1631,7 @@ F test/shell7.test 43fd8e511c533bab5232e95c7b4be93b243451709e89582600d4b6e67693d
 F test/shell8.test 38c9e4d7e85d2a3ecfacaa9f6cda4f7a81bf4fffb5f3f37f9cd76827c6883192
 F test/shell9.test 8742a5b390cdcef6369f5aa223e415aa4255a4129ef249b177887dc635a87209
 F test/shellA.test 05cdaafa1f79913654487ce3aefa038d4106245d58f52e02faf506140a76d480
-F test/shellB.test 1f0a95bf8c7047a385f54b69b272887e1efeb3d8f34e6f09ed2f865083bbfc3e
+F test/shellB.test 73fd5aa8c126f6941493e22598bc9864be4af670bc989b426443a2baebc104dd
 F test/shmlock.test 9f1f729a7fe2c46c88b156af819ac9b72c0714ac6f7246638a73c5752b5fd13c
 F test/shortread1.test bb591ef20f0fd9ed26d0d12e80eee6d7ac8897a3
 F test/show_speedtest1_rtree.tcl 32e6c5f073d7426148a6936a0408f4b5b169aba5
@@ -2196,8 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh d924598cf2f55a4ecbc2aeb055c10bd5f48114793e7ba25f9585435da29e7e98
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 8ac63ebc5c04ba555bbf0d878a70e25deba5fcc75ff44c464600b92c27e5dcb0
-R 3fa7dbd1f9c7e7bf7f235a0b6a9eb234
+P abecc8e388e294311aa0b572e0a984b8ddad2afbf829c1246e1682fa549c8fac
+R 3a662ca0649735fc41e920572fb64776
 U drh
-Z 3bb8f45dd6d08d23bece1f3ddd3cf2c3
+Z 42f0fd55beedce180599a4c54b875ae0
 # Remove this line to create a well-formed Fossil manifest.
