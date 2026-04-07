@@ -1,5 +1,5 @@
-C Add\sa\sdummy\sauto-extension\sto\sthe\sshell\sin\sSQLITE_DEBUG\sbuilds\sto\svalidate\sthat\s[9d56df17b4ab49]\sdoes\sthe\sright\sthing.
-D 2026-04-06T22:00:20.266
+C Replace\sa\sdoc\sreference\sto\sa\srenamed\sfile,\sas\sreported\sby\s[forum:5d9d70c618|forum\spost\s5d9d70c618].\sNo\scode\schanges.
+D 2026-04-07T09:15:21.538
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -422,7 +422,7 @@ F ext/misc/zorder.c bddff2e1b9661a90c95c2a9a9c7ecd8908afab5763256294dd12d609d466
 F ext/qrf/README.md 9e644615d7d7b77ef7e9db798765679e50c5ed12eda48bce21c9ef9eb4715e9d
 F ext/qrf/dev-notes.md e68a6d91ce4c7eb296ef2daadc2bb79c95c317ad15b9fafe40850c67b29c2430
 F ext/qrf/qrf.c 7334c688296f818f99c0cf37318b279ef62982a4860762096158237981fecb06
-F ext/qrf/qrf.h 751fc5b102fa7e19aa4f1e2e75012fdc477bf6af7409dff36f9de5a9f3f6cf22
+F ext/qrf/qrf.h 13c4f0b5d4aa7a6a556ef66943d6518ef23d9f5b7504c6d5929b785abc675825
 F ext/rbu/rbu.c 801450b24eaf14440d8fd20385aacc751d5c9d6123398df41b1b5aa804bf4ce8
 F ext/rbu/rbu1.test 25870dd7db7eb5597e2b4d6e29e7a7e095abf332660f67d89959552ce8f8f255
 F ext/rbu/rbu10.test 7c22caa32c2ff26983ca8320779a31495a6555737684af7aba3daaf762ef3363
@@ -2197,8 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P c4dd7e8b36deced3ee9cc6b5f87d8b3cc9a752cad8d62c9b711c7b58db11834b
-R 270616ffaec7921abd36defc5a895e72
+P 164af3703b8fb5d88612edcceeaae0ae5a230c34c7a0f2ac9b650f5a742b2787
+R 9f758bde619450443d8a4f8211752a93
 U stephan
-Z 5ef21d67fb27fbc6b50e30ad6b25a59e
+Z 9d2ed17cd4db302a9a4e0c15d9f6727b
 # Remove this line to create a well-formed Fossil manifest.
