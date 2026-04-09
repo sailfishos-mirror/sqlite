@@ -1,5 +1,2 @@
-branch trunk
-tag trunk
-tag release
-tag major-release
-tag version-3.53.0
+branch o_tmpfile
+tag o_tmpfile
