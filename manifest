@@ -1,5 +1,5 @@
-C Fix\ssome\sbuffer\soverreads\sthat\smight\soccur\sin\sthe\ssession\smodule\swhen\shandling\scorrupt\schangesets.
-D 2026-04-09T10:39:32.897
+C Version\s3.53.0
+D 2026-04-09T11:41:38.498
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -2197,9 +2197,11 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 0837933b49f5fc5590f2052808bc305aceccafbf5db65aae250c594ce48d4d32 8fcf92e15d87487703afc1129f3a89a8d4d72cb30d30a1a9151a5596473069bd
+P cda5dd9bcbef2135bb9855139a11d0e22a092f9498d82eb18e7d4401264b6eb8
 R 78f8c181262c6bdd7ab10b5492ff03ea
-T +closed 8fcf92e15d87487703afc1129f3a89a8d4d72cb30d30a1a9151a5596473069bd
-U dan
-Z 41a68b2ae9578e53e425028b65a39dbf
+T +sym-major-release *
+T +sym-release *
+T +sym-version-3.53.0 *
+U drh
+Z 5cc2d306947f7e965f5f798b08602c26
 # Remove this line to create a well-formed Fossil manifest.
