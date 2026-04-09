@@ -1,5 +1,5 @@
-C Updates\sto\stestrunner.tcl:\s\sShorten\sthe\sprefix\son\screated\ssubdirectories\sfrom\n"testrunner_bld_"\sto\sjust\s"testrun_".\s\sDo\snot\sappend\s".exe"\sto\sthe\snames\sof\ncreated\ssubdirectories.\s\sAdd\sthe\s"clean"\scommand\sto\srecursively\sremove\sall\nsubdirectories\sand\sfiles\screated\sby\sa\stest\srun.
-D 2026-04-09T16:08:29.996
+C Use\sO_TMPFILE\s(on\ssystems\sthat\ssupport\sit)\sto\ssecurity\screate\sa\stemporary\nfile\sthat\sis\sinaccessible\sto\sany\sother\sprocess.
+D 2026-04-09T16:16:39.462
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -719,7 +719,7 @@ F src/os.h 1ff5ae51d339d0e30d8a9d814f4b8f8e448169304d83a7ed9db66a65732f3e63
 F src/os_common.h 6c0eb8dd40ef3e12fe585a13e709710267a258e2c8dd1c40b1948a1d14582e06
 F src/os_kv.c e7d96727db5b67e39d590a68cc61c86daf4c093c36c011a09ebfb521182ec28d
 F src/os_setup.h 8efc64eda6a6c2f221387eefc2e7e45fd5a3d5c8337a7a83519ba4fbd2957ae2
-F src/os_unix.c fa5e09b4df35ad845440cad67b86908cfe1fd4c28c51915f82e23633d1992bf4
+F src/os_unix.c a07dce662f6c4e18098f6faa9f7ec7cf311f56ee9151bed2aad4dcd55852c9e2
 F src/os_win.c 0d553b6e8b92c8eb85e7f1b4a8036fe8638c8b32c9ad8d9d72a861c10f81b4c5
 F src/os_win.h 5e168adf482484327195d10f9c3bce3520f598e04e07ffe62c9c5a8067c1037b
 F src/pager.c fe34fd22ec251436985d7b6ebdd05bf238a17901c2cb23d3d28974dd2361a912
@@ -2197,8 +2197,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 4c2a5c9bb40c63bb9d0f633f78d132bdd69b9d755d4e6d5e3cb534e63b383a4e
-R e4d712ce556ffb97f0dc40bbf98f6c34
+P 450c7edf1247024db4b66f38bf9561c5c6b0c4175c4df8de17019aea6cbde5cf 094fc6da0768ea0ec4b4d3dc020cd6025aab341550d6cea6be7487ac570f9171
+R 3859e15f84d69d9c5d2ca3a8aab9bbbc
+T +closed 094fc6da0768ea0ec4b4d3dc020cd6025aab341550d6cea6be7487ac570f9171
 U drh
-Z 9ff03cf26c35e2228f544c567c67b650
+Z f2afa9c19f08115f7108ad30dacf8d8a
 # Remove this line to create a well-formed Fossil manifest.
