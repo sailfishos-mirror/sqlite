@@ -1,5 +1,5 @@
-C Improve\sdefenses\sin\sQRF\sagainst\strying\sto\srun\sthe\ssame\sprepared\sstatement\ntwice,\sconcurrently.
-D 2026-04-10T18:14:33.530
+C Expose\sthe\smain\s/fiddle\sobject\sto\sthe\sbrowser\sdev\sconsole\sas\sglobalThis.fiddle\sfor\sexperimenting\swith\sa\sdynamic\sprompt.
+D 2026-04-10T21:58:13.047
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -622,7 +622,7 @@ F ext/wasm/demo-worker1.html 2c178c1890a2beb5a5fecb1453e796d067a4b8d3d2a04d65ca2
 F ext/wasm/demo-worker1.js fdfa90aa9d6b402bfed802cf1595fe4da6cc834ac38c8ff854bf1ee01f5ff9bb
 F ext/wasm/example_extra_init.c 2347cd69d19d839ef4e5e77b7855103a7fe3ef2af86f2e8c95839afd8b05862f
 F ext/wasm/fiddle/fiddle-worker.js 6c72acac2d381480bc9f5eb538e3f2faf2c1f72dd4fcbd05d3b409818a9a8fd5
-F ext/wasm/fiddle/fiddle.js 84fd75967e0af8b69d3dd849818342227d0f81d13db92e0dcbc63649b31a4893
+F ext/wasm/fiddle/fiddle.js fc0f19303d00014a0f285fefd30953e953be1bd01e757bbd9eda45c9dc2c154b
 F ext/wasm/fiddle/index.c-pp.html 02f063ef30b8124f311029855c4439e77bc6505d1bf65a163d88c064a63ee9d9
 F ext/wasm/index-dist.html db23748044e286773f2768eec287669501703b5d5f72755e8db73607dc54d290
 F ext/wasm/index.html 5bf6cf1b0a3c8b9f5f54d77f2219d7ae87a15162055ce308109c49b1dcab4239
@@ -2197,8 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 749c537812b907164b7e7ad1fddc1aee8106c59875d2686fe83d602cd0e07611
-R dcd0777a578b9e7fcae4e40b79f9e2d6
-U drh
-Z 7fb5863e4e0e9a753db98e9b8a77917c
+P 6ab6f622be3e1ad93166d139b5fccf9628c86d1c14c6dfb4464cb8cf52c94785
+R 5ef92b6afa68000360f3b1c215700c31
+U stephan
+Z 3e15b31189a25ff4567c95970af981f9
 # Remove this line to create a well-formed Fossil manifest.
