@@ -1,5 +1,5 @@
-C Attempt\sto\swork\saround\sa\sbug\sin\slegacy\sMicrosoft\scompilers.\n[forum:/forumpost/2026-04-10T06:33:11z|Forum\spost\s2026-04-10T06:33:11z].
-D 2026-04-10T10:48:04.547
+C Fix\sthe\sprintf()\soptimization\sadded\sat\s[ccb6b6c4ac21742d]\sso\sthat\nsqlite3_snprintf()\sdoes\snot\sincorrectly\struncate\sfloating-point\nconversions\sthat\sare\sclose\sto\sfilling\sthe\sbuffer,\sas\sreported\sin\n[forum:/forumpost/2026-04-10T13:48:12z|forum\spost\s2026-04-10T13:48:12z].
+D 2026-04-10T15:55:08.125
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -730,7 +730,7 @@ F src/pcache.h 092b758d2c5e4dabb30eae46d8dfad77c0f70b16bf3ff1943f7a232b0fe0d4ba
 F src/pcache1.c 131ca0daf4e66b4608d2945ae76d6ed90de3f60539afbd5ef9ec65667a5f2fcd
 F src/pragma.c 789ef67117b74b5be0a2db6681f7f0c55e6913791b9da309aefd280de2c8a74d
 F src/prepare.c f6a6e28a281bd1d1da12f47d370a81af46159b40f73bf7fa0b276b664f9c8b7d
-F src/printf.c 41fb76fcb5ed7e16aaddc659d3b23891abebea45549fe125fc2e6ec380cc7175
+F src/printf.c 1a36bbae9b90883a2fb0538d507a0ad442bd9ad5d09f70611497f4545fcb9c18
 F src/random.c 606b00941a1d7dd09c381d3279a058d771f406c5213c9932bbd93d5587be4b9c
 F src/resolve.c 928ff887f2a7c64275182060d94d06fdddbe32226c569781cf7e7edc6f58d7fd
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
@@ -2197,8 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P e065c019d29d4e82a21a89984b86c1811c2b1bdd4663c792857cf89ea2cd91c3
-R 8127f153dc9a1599ccc654fdd94dc1c8
+P 661e1413625f55c37e2cd4d785074576d355e125231bbc1dd0a511a2b02c8e3b
+R baba16775450c8964821e2417e9653d2
 U drh
-Z 38c6d04c9960fa27f7218afc89a7609a
+Z 57096cec1940506f668f60f957b637e5
 # Remove this line to create a well-formed Fossil manifest.
