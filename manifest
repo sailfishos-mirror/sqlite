@@ -1,5 +1,5 @@
-C Enhancements\sto\sshell_prompt_test()\sfor\sbetter\stesting.\s\sEnhance\sthe\n".open"\scommand\sso\sthat\sit\sdoes\s~/\sexpansion\son\sfilenames.
-D 2026-04-11T14:11:56.053
+C Add\s--reset,\s--show,\sand\s--\soptions\sto\sthe\s".prompt"\scommand\sof\sthe\sCLI.
+D 2026-04-11T15:45:45.725
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -735,7 +735,7 @@ F src/random.c 606b00941a1d7dd09c381d3279a058d771f406c5213c9932bbd93d5587be4b9c
 F src/resolve.c 928ff887f2a7c64275182060d94d06fdddbe32226c569781cf7e7edc6f58d7fd
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
 F src/select.c ffe199f025a0dd74670d2a77232bdea364a4d7b36f32c64a6572d39ba6a11576
-F src/shell.c.in 7145f12e0a923fca7f1716086796e279785d19d95dfaa3ac7314e59e29d086c0
+F src/shell.c.in 0007932372e03af8a58060bacbc5cf66ce199b133f41835e28e2cf69eaa4e356
 F src/sqlite.h.in a5605faa9479bbaac16c4ab43eb09ff50632004a8e05084d3fde56063ef73766
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
 F src/sqlite3ext.h 1b7a0ee438bb5c2896d0609c537e917d8057b3340f6ad004d2de44f03e3d3cca
@@ -2197,8 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a46ceaeab968d8f376c5a225c23c0be8619fed4511b7e567baf3a8d7736c19d1
-R b145f37224b01e5b0236a04795b472a6
+P ec6830fe60b73bc606d3c2a5d407a39db53f6dadee760829410abfa1df46389e
+R 88ad9dd87efed80bbaec4531f930e2fd
 U drh
-Z 7ccada63678abda6f630b8ea89fca70f
+Z cfdc335f1af0530f176bbfd2d779b4ff
 # Remove this line to create a well-formed Fossil manifest.
