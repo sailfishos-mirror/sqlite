@@ -1,5 +1,5 @@
-C Improvements\sto\sthe\sinteractive\sprompt\sin\sthe\sCLI:\n(1)\sCLI\shonors\sSQLITE_PS1\sand\sSQLITE_PS2\senvvars\sas\sprompt\sstrings,\n(2)\sCLI\sprompt\sstrings\sexpand\svarious\sbackslash\sescapes,\n(3)\sNo\sarbitrary\slength\slimits\son\sCLI\sprompt\sstrings,\n(4)\sNew\sdefault\sprompt\sshows\sthe\sdatabase\sfilename\susing\sthe\s&#92;f\nescape,\n(5)\sSQLite\score\sadds\sthe\ssqlite3_incomplate()\sAPI,\sused\sby\nthe\s&#92;H\sescape\sin\sprompt\sstring\srendering,\n(6)\sEnhancements\sto\sthe\s".prompt"\sdot-command.
-D 2026-04-11T18:38:54.051
+C fiddle:\sdisable\sjquery.terminal's\spre-processing\sof\suser\sinput,\sas\sdiscussed\sin\s[forum:c6665017c0dbba1f|forum\spost\sc6665017c0dbba1f],\swith\smany\sthanks\sto\sthe\sjquery.terminal\steam\sfor\sthis\sworkaround.
+D 2026-04-11T20:31:03.448
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -622,7 +622,7 @@ F ext/wasm/demo-worker1.html 2c178c1890a2beb5a5fecb1453e796d067a4b8d3d2a04d65ca2
 F ext/wasm/demo-worker1.js fdfa90aa9d6b402bfed802cf1595fe4da6cc834ac38c8ff854bf1ee01f5ff9bb
 F ext/wasm/example_extra_init.c 2347cd69d19d839ef4e5e77b7855103a7fe3ef2af86f2e8c95839afd8b05862f
 F ext/wasm/fiddle/fiddle-worker.js 3cdd20c1e84494a1f28bd80265ae2a754764b08c67e146e61f99d864de4bf5f6
-F ext/wasm/fiddle/fiddle.js ed0551146eb36a0679833d6fd58ba4f025f27e673a0f19535c6386397721849b
+F ext/wasm/fiddle/fiddle.js 2a0984cc4a35e6889c0d84ee9bf853317d5545ddb3966dfb995bbe589f923c4c
 F ext/wasm/fiddle/index.c-pp.html 02f063ef30b8124f311029855c4439e77bc6505d1bf65a163d88c064a63ee9d9
 F ext/wasm/index-dist.html db23748044e286773f2768eec287669501703b5d5f72755e8db73607dc54d290
 F ext/wasm/index.html 5bf6cf1b0a3c8b9f5f54d77f2219d7ae87a15162055ce308109c49b1dcab4239
@@ -2198,9 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 149200861e4690dab5f2e690b62f355b13a8370dccaab5546caa6842b4ff963a 3b4cc8d3beab8c910dd954bf8093f7ab499e4690b9cf882f981c4415dd7a7540
-R 865ef32ca21a6acb62eb499392cf595d
-T +closed 3b4cc8d3beab8c910dd954bf8093f7ab499e4690b9cf882f981c4415dd7a7540
-U drh
-Z adff825d993df698cc251e509641206b
+P 55af98054e073d6eee3e85fd7564c83eca935ae205da68f5e8f1b561e7f08c00
+R 777e468003c10d7596cedc26a23c4d74
+U stephan
+Z c23a8cffaa97411f958e9323c8d87549
 # Remove this line to create a well-formed Fossil manifest.
