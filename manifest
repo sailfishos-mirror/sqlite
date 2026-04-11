@@ -1,5 +1,5 @@
-C When\sfiddle\sterminal\smode\sis\senabled,\sadd\sa\slink\sto\sthe\sjquery.terminal\sproject\sin\sthe\sAbout\sbox.
-D 2026-04-11T20:43:49.005
+C Make\ssqlite3_incomplete()\savailable\sto\sextensions.
+D 2026-04-11T20:53:53.734
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -697,7 +697,7 @@ F src/in-operator.md 10cd8f4bcd225a32518407c2fb2484089112fd71
 F src/insert.c dfd311b0ac2d4f6359e62013db67799757f4d2cc56cca5c10f4888acfbbfa3fd
 F src/json.c 5027b856cd9b621dc9ba66b211e21a440ccdc63cefdefb44c51e7d3ac550d1a4
 F src/legacy.c d7874bc885906868cd51e6c2156698f2754f02d9eee1bae2d687323c3ca8e5aa
-F src/loadext.c 56a542244fbefc739a2ef57fac007c16b2aefdb4377f584e9547db2ce3e071f9
+F src/loadext.c 78d5b06f18996ffa1203129b28fea043f63a87a4117539678f1d761c30b4ff65
 F src/main.c 387bb9d0216d6d35b221481ba8e661d94ad043060cd89581b6422c269ce680a0
 F src/malloc.c 422f7e0498e1c9ef967f06283b6f2c0b16db6b905d8e06f6dbc8baaa3e4e6c5a
 F src/mem0.c 6a55ebe57c46ca1a7d98da93aaa07f99f1059645
@@ -738,7 +738,7 @@ F src/select.c ffe199f025a0dd74670d2a77232bdea364a4d7b36f32c64a6572d39ba6a11576
 F src/shell.c.in bed26ce3998b32fde83acbf7f4af3bd9e64902bec6bbfa1a834c9f30497b7231
 F src/sqlite.h.in a5605faa9479bbaac16c4ab43eb09ff50632004a8e05084d3fde56063ef73766
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
-F src/sqlite3ext.h 1b7a0ee438bb5c2896d0609c537e917d8057b3340f6ad004d2de44f03e3d3cca
+F src/sqlite3ext.h 9788c301f95370fa30e808861f1d2e6f022a816ddbe2a4f67486784c1b31db2e
 F src/sqliteInt.h bc1cbc0c23dba35b324ae85a7dbb5fb182321bbd30857fb21f3d0cba049001a5
 F src/sqliteLimit.h c70656b67ab5b96741a8f1c812bdd80c81f2b1c1e443d0cc3ea8c33bb1f1a092
 F src/status.c 7565d63a79aa2f326339a24a0461a60096d0bd2bce711fefb50b5c89335f3592
@@ -2198,8 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 8dfdff559faefd943b97827dc3c7100fc4469e2f8353a264fb322e23af5cb669
-R deafd57fe42fa8d6edd5fc6c6f32f297
-U stephan
-Z 3eacac4a0cdb460472e53f871cf3a012
+P d64f0c8845104008d6c251f9a1406c6ff717a916c13b64014aa1d154501d5fab
+R 45d7c60267b13972f0ab4dce051b695d
+U drh
+Z 42a52aa93a60133b1826fa4cd9707451
 # Remove this line to create a well-formed Fossil manifest.
