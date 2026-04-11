@@ -1,5 +1,5 @@
-C Initial\stest\scases\sfor\sthe\sCLI\sprompt\senhancements.
-D 2026-04-11T16:12:12.307
+C Fix\sharmless\scompiler\swarnings.
+D 2026-04-11T17:47:31.596
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -735,7 +735,7 @@ F src/random.c 606b00941a1d7dd09c381d3279a058d771f406c5213c9932bbd93d5587be4b9c
 F src/resolve.c 928ff887f2a7c64275182060d94d06fdddbe32226c569781cf7e7edc6f58d7fd
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
 F src/select.c ffe199f025a0dd74670d2a77232bdea364a4d7b36f32c64a6572d39ba6a11576
-F src/shell.c.in 0007932372e03af8a58060bacbc5cf66ce199b133f41835e28e2cf69eaa4e356
+F src/shell.c.in bed26ce3998b32fde83acbf7f4af3bd9e64902bec6bbfa1a834c9f30497b7231
 F src/sqlite.h.in a5605faa9479bbaac16c4ab43eb09ff50632004a8e05084d3fde56063ef73766
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
 F src/sqlite3ext.h 1b7a0ee438bb5c2896d0609c537e917d8057b3340f6ad004d2de44f03e3d3cca
@@ -2198,8 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 8075576ba2324a458440bae398baecc7872b6528574b7fe6681a3a30b62d58ef
-R f48e042fefe94b7b0163646f453436c8
+P b7ecc84735d41e9cdb498020b86d8219efa18ca5b40aef1031a14809f1ac2d38
+R 3f3e811020519b37271ba11ee0c7ac4e
 U drh
-Z cc8f78fbdba944ff44e190e2f866d31e
+Z 2c87724d0b9b70070b616de7a4951a24
 # Remove this line to create a well-formed Fossil manifest.
