@@ -1,5 +1,5 @@
-C fiddle:\sdisable\sjquery.terminal's\spre-processing\sof\suser\sinput,\sas\sdiscussed\sin\s[forum:c6665017c0dbba1f|forum\spost\sc6665017c0dbba1f],\swith\smany\sthanks\sto\sthe\sjquery.terminal\steam\sfor\sthis\sworkaround.
-D 2026-04-11T20:31:03.448
+C Fix\sharmless\sUB\sin\ssqlite3_incomplete().
+D 2026-04-11T20:41:54.674
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -680,7 +680,7 @@ F src/btreeInt.h 9c0f9ea5c9b5f4dcaea18111d43efe95f2ac276cd86d770dce10fd99ccc9388
 F src/build.c 8581de0af3b6c448f5d64e2d18a91ac1e7057b3bcb8b8827e1240f80d87486a4
 F src/callback.c 3605bbf02bd7ed46c79cd48346db4a32fc51d67624400539c0532f4eead804ad
 F src/carray.c 3efe3982d5fb323334c29328a4e189ccaef6b95612a6084ad5fa124fd5db1179
-F src/complete.c 9304071c5f2ddd040cd786ec5d157c6a5592561674816e4a9e74164a0ba40647
+F src/complete.c f216b970ce99c5a657556cf1f17e7ddd494515d3beb63df426bf59ff43bd3d9a
 F src/date.c 61e92f1f7e2e88e1cd91e91dc69eb2b2854e7877254470f9fabd776bfac922b8
 F src/dbpage.c c9ea81c11727f27e02874611e92773e68e2a90a875ef2404b084564c235fd91f
 F src/dbstat.c 73362c0df0f40ad5523a6f5501224959d0976757b511299bf892313e79d14f5c
@@ -2198,8 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 55af98054e073d6eee3e85fd7564c83eca935ae205da68f5e8f1b561e7f08c00
-R 777e468003c10d7596cedc26a23c4d74
-U stephan
-Z c23a8cffaa97411f958e9323c8d87549
+P ea7e121ab2a7b2fee5372ca12a2a53c7e98ffa1b49d85944f7ce4a7251a777c8
+R 90e4bfee6b512a9110c820c65850f185
+U drh
+Z c0a69f0ffd3e73078ac42351e2bb78b2
 # Remove this line to create a well-formed Fossil manifest.
