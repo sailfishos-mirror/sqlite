@@ -1,12 +1,12 @@
-C Enhance\stestrunner.tcl\sto\srun\sindividual\stests\swritten\sin\sC\sfrom\sthe\stest/c/\sdirectory.
-D 2026-04-11T17:03:27.142
+C Fixes\sfor\srunning\sC\stests\son\swindows.
+D 2026-04-11T18:05:49.490
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
 F LICENSE.md 6bc480fc673fb4acbc4094e77edb326267dd460162d7723c7f30bee2d3d9e97d
 F Makefile.in 5fda086f33b144da08119255da1d2557f983d0764a13707f05acf0159fd89ba5
 F Makefile.linux-generic bd3e3cacd369821a6241d4ea1967395c962dfe3057e38cb0a435cee0e8b789d0
-F Makefile.msc 06b757f8648f1d9dd9683dbd72350cf0cf20d6fe09168cac455569b81dd97ddc
+F Makefile.msc 2bca86f47166c2b532a697226570a0a42651de562e9438b991e9a349c78a14b0
 F README.md f49fbd826941842e348242f3ab62f240c985ceafdf8fbe576abf4eb75317468c
 F VERSION 99cf3be5f13d091183e4314b7fc2e0c0e69accfbe64608b45a313338bbdd7b62
 F art/icon-243x273.gif 9750b734f82fdb3dc43127753d5e6fbf3b62c9f4e136c2fbf573b2f57ea87af5
@@ -1716,7 +1716,7 @@ F test/temptrigfault.tes fc5918e64f3867156fefe7cfca9d8e1f495134a5229b2b511b0dc11
 F test/temptrigger.test a00f258ed8d21a0e8fd4f322f15e8cfb5cef2e43655670e07a753e3fb4769d61
 F test/tester.tcl 2d943f60200e0a36bcd3f1f0baf181a751cd3604ef6b6bd4c8dc39b4e8a53116
 F test/testloadext.c 862b848783eaed9985fbce46c65cd214664376b549fae252b364d5d1ef350a27
-F test/testrunner.tcl 4fec0a6e309aa8475a88437b086ddf57752e72a0d702bae03a348bb850e8cd28 x
+F test/testrunner.tcl 83f3558fc3b5dc4198c4e28e6745dfedd47e941a39684e8250c2da4afb4d1aa1 x
 F test/testrunner_data.tcl 48c8a230fcada37f4809f95c2ba49e44bc3d520b6165c09173249c6e65b01cc1
 F test/testrunner_estwork.tcl 81e2ae10238f50540f42fbf2d94913052a99bfb494b69e546506323f195dcff9
 F test/thread001.test a0985c117eab62c0c65526e9fa5d1360dd1cac5b03bde223902763274ce21899
@@ -2199,11 +2199,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 149200861e4690dab5f2e690b62f355b13a8370dccaab5546caa6842b4ff963a
-R b5b97af91d384a8d8c497f38d965d286
-T *branch * c-tests
-T *sym-c-tests *
-T -sym-trunk *
+P 6f140f76f47aadb10d3f35358503d91adb43e0c1802326f6e599effe1b08e7aa
+R 31ad279044db4da19ac491560861e5f0
 U dan
-Z 12c59f908d732d37d9f05853875102bc
+Z 2df93e5c0d17d35f33108c098af6479d
 # Remove this line to create a well-formed Fossil manifest.
