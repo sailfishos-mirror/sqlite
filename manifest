@@ -1,5 +1,5 @@
-C Add\s--reset,\s--show,\sand\s--\soptions\sto\sthe\s".prompt"\scommand\sof\sthe\sCLI.
-D 2026-04-11T15:45:45.725
+C Initial\stest\scases\sfor\sthe\sCLI\sprompt\senhancements.
+D 2026-04-11T16:12:12.307
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1619,6 +1619,7 @@ F test/sharedA.test 64bdd21216dda2c6a3bd3475348ccdc108160f34682c97f2f51c19fc0e21
 F test/sharedB.test 1a84863d7a2204e0d42f2e1606577c5e92e4473fa37ea0f5bdf829e4bf8ee707
 F test/shared_err.test 32634e404a3317eeb94abc7a099c556a346fdb8fb3858dbe222a4cbb8926a939
 F test/sharedlock.test 5ede3c37439067c43b0198f580fd374ebf15d304
+F test/shell-prompt.sql c1437f778af91ae3dcb705225c09564a84197626f93de4725233c4ab6ac6daf0
 F test/shell1.test eda2e527435f139224dda67db6bbd2466597408d4fe5883d647d67fa32d88f7c
 F test/shell2.test dc541d2681503e55466a24d35a4cbf8ca5b90b8fcdef37fc4db07373a67d31d3
 F test/shell3.test 91efdd545097a61a1f72cf79c9ad5b49da080f3f10282eaf4c3c272cd1012db2
@@ -1629,7 +1630,7 @@ F test/shell7.test 43fd8e511c533bab5232e95c7b4be93b243451709e89582600d4b6e67693d
 F test/shell8.test 38c9e4d7e85d2a3ecfacaa9f6cda4f7a81bf4fffb5f3f37f9cd76827c6883192
 F test/shell9.test c0e8871061a92151450b3332279a893b516fa73a6c46d4f51a0998407cbf8c89
 F test/shellA.test 05cdaafa1f79913654487ce3aefa038d4106245d58f52e02faf506140a76d480
-F test/shellB.test 31df04230f6062069bb7c5d0e5c5439ca44448fa9da1a55aa461a4b872fe6bd9
+F test/shellB.test a42be39e2332877d8ee239e1ca2a78d0a1feda21d90f3dd50f32f26cc3b433de
 F test/shmlock.test 9f1f729a7fe2c46c88b156af819ac9b72c0714ac6f7246638a73c5752b5fd13c
 F test/shortread1.test bb591ef20f0fd9ed26d0d12e80eee6d7ac8897a3
 F test/show_speedtest1_rtree.tcl 32e6c5f073d7426148a6936a0408f4b5b169aba5
@@ -2197,8 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P ec6830fe60b73bc606d3c2a5d407a39db53f6dadee760829410abfa1df46389e
-R 88ad9dd87efed80bbaec4531f930e2fd
+P 8075576ba2324a458440bae398baecc7872b6528574b7fe6681a3a30b62d58ef
+R f48e042fefe94b7b0163646f453436c8
 U drh
-Z cfdc335f1af0530f176bbfd2d779b4ff
+Z cc8f78fbdba944ff44e190e2f866d31e
 # Remove this line to create a well-formed Fossil manifest.
