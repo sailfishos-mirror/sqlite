@@ -1,5 +1,5 @@
-C Doc\stypo\sfix\swhich\sbroke\sthe\sdocsrc\sbuild,\sreported\sby\sBrickViking.
-D 2026-04-12T17:47:57.565
+C Latest\supstream\sjimsh0.c.
+D 2026-04-13T10:56:14.049
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -44,7 +44,7 @@ F autosetup/cc-lib.tcl 493c5935b5dd3bf9bd4eca89b07c8b1b1a9356d61783035144e21795f
 F autosetup/cc-shared.tcl 163eda58c14cd662fd8a504bd2ad8a716ef4db7015dc1de0095d5de8dd601a4b
 F autosetup/cc.tcl c0fcc50ca91deff8741e449ddad05bcd08268bc31177e613a6343bbd1fd3e45f
 F autosetup/find_tclconfig.tcl e64886ffe3b982d4df42cd28ed91fe0b5940c2c5785e126c1821baf61bc86a7e
-F autosetup/jimsh0.c 916bbdf8023fbda9937afae57d81a853d8c2ea00f2320aa27becbc33574f963d
+F autosetup/jimsh0.c 740dc8cbfaedaff1f27b54b32e0015b22fa6c1a439492b9795968d61e56bab75
 F autosetup/pkg-config.tcl 4e635bf39022ff65e0d5434339dd41503ea48fc53822c9c5bde88b02d3d952ba
 F autosetup/proj.tcl ce301197f364f7ce2acabbbd84b43d19e917ec73653157ca134a06f32d322712
 F autosetup/sqlite-config.tcl 8fecce2838b7e7d990d161d08998034f3e3b0b2ddf4d7a99dbfafba9c902e302
@@ -2198,8 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 7583385593354f90a9818d1820543841109f253dffcec5ca5ed7629336e29fac
-R f83f5494894ee6e4bc61b7cf7a505572
+P 3c212b5d85338f90a5f1a2d1484e54c0bf699eedef19a16f4c0de76a76dd9d07
+R e0962ba2c654c906138751c5846e6218
 U stephan
-Z 9bdb6964f3efeb6e9da57823378b906a
+Z 17befd6faf62861447677acabc5e0fc5
 # Remove this line to create a well-formed Fossil manifest.
