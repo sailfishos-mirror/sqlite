@@ -1,5 +1,5 @@
-C Fixes\sfor\srunning\sC\stests\son\swindows.
-D 2026-04-11T18:05:49.490
+C Update\stest/c/snprintf1.c\sto\stest\sthe\sresult\sof\sthe\ssqlite3_snprintf()\scall.\sAlso\sadd\san\sSQLITE_OMIT_AUTOINIT\sconfiguration\sand\supdate\sC\stests\sto\saccount\sfor\sit.
+D 2026-04-13T11:20:51.964
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -943,8 +943,8 @@ F test/btree02.test 7555a5440453d900410160a52554fe6478af4faf53098f7235f1f443d5a1
 F test/btreefault.test a82a23b0578bc587afbf9a622c8f54a54f63762f062ba8a35613cfee38ab42f9
 F test/busy.test caff7164c16ce06a53af51f9e4c2753d4cc64250e00790a5e48b9c4f4be37597
 F test/busy2.test 20823a5d7c42fb257d9f108c66312d90b1bb4ec3d80ba6b4e371073727560f98
-F test/c/malloc1.c 205f092eb955de012fdacb276ff46e258da3da7aaded1d115802babfdf8b8a5f
-F test/c/snprintf1.c a949aee57dd17c0f74d9bbb89a5269e160775f984aadf0ac745dc7d17c48ccaa
+F test/c/malloc1.c 2869384011b5dc1f019ddd94e5248a1f2dfd07db06c6ce854793c91da173b811
+F test/c/snprintf1.c a66a1ce1195bd409740a60ebeea008686ce3fbacb445840fc0a45419823b7f3f
 F test/cache.test 13bc046b26210471ca6f2889aceb1ea52dc717de
 F test/cacheflush.test af25bb1509df04c1da10e38d8f322d66eceedf61
 F test/cachespill.test 895997f84a25b323b166aecb69baab2d6380ea98f9e0bcc688c4493c535cfab9
@@ -1608,7 +1608,7 @@ F test/selectG.test 089f7d3d7e6db91566f00b036cb353107a2cca6220eb1cb264085a836dae
 F test/selectH.test 0b54599f1917d99568c9b929df22ec6261ed7b6d2f02a46b5945ef81b7871aac
 F test/session.test 78fa2365e93d3663a6e933f86e7afc395adf18be
 F test/sessionfuzz-data1.db 1f8d5def831f19b1c74571037f0d53a588ea49a6c4ca2a028fc0c27ef896dbcb
-F test/sessionfuzz.c f693b8827034a3bed7616d89c65fb4fe8b7ff3c0f000c6ea6beda69b7f1aced3
+F test/sessionfuzz.c 0ec813258fbfd222c62ba6867c6a5a015f098fcaa6d89e7e0ee623ea91145cf0
 F test/shared.test 50bd8091735b272732125928c363476a17b5fb264835de7d19e90c72055c888b
 F test/shared2.test 03eb4a8d372e290107d34b6ce1809919a698e879
 F test/shared3.test cb92d083003ddf0f313166e494ec2fcafa55fdebf648628923ded3169dba8850
@@ -1717,7 +1717,7 @@ F test/temptrigger.test a00f258ed8d21a0e8fd4f322f15e8cfb5cef2e43655670e07a753e3f
 F test/tester.tcl 2d943f60200e0a36bcd3f1f0baf181a751cd3604ef6b6bd4c8dc39b4e8a53116
 F test/testloadext.c 862b848783eaed9985fbce46c65cd214664376b549fae252b364d5d1ef350a27
 F test/testrunner.tcl 83f3558fc3b5dc4198c4e28e6745dfedd47e941a39684e8250c2da4afb4d1aa1 x
-F test/testrunner_data.tcl 48c8a230fcada37f4809f95c2ba49e44bc3d520b6165c09173249c6e65b01cc1
+F test/testrunner_data.tcl dfcf192d274e965845189cc014ac89fff91dde92b6e2ac9e1262897fc21ee2e0
 F test/testrunner_estwork.tcl 81e2ae10238f50540f42fbf2d94913052a99bfb494b69e546506323f195dcff9
 F test/thread001.test a0985c117eab62c0c65526e9fa5d1360dd1cac5b03bde223902763274ce21899
 F test/thread002.test c24c83408e35ba5a952a3638b7ac03ccdf1ce4409289c54a050ac4c5f1de7502
@@ -2199,8 +2199,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 6f140f76f47aadb10d3f35358503d91adb43e0c1802326f6e599effe1b08e7aa
-R 31ad279044db4da19ac491560861e5f0
+P 1fcacdc41ab1bb66a628acdac29412e66decdc2578dd9d084baaffb74679f984
+R 0d5fe3584838a8433db3cb25d82db287
 U dan
-Z 2df93e5c0d17d35f33108c098af6479d
+Z 0b9767935acf248961d06265bf8a86d2
 # Remove this line to create a well-formed Fossil manifest.
