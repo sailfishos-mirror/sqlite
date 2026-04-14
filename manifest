@@ -1,5 +1,5 @@
-C Improvements\sto\sthe\sprompt_filename()\sfunction\sin\sthe\sCLI\sso\sthat\sit\sfinds\nthe\sdatabase\sfilename\seven\sif\sthe\sconnection\sis\snot\syet\sfully\sopen.
-D 2026-04-13T11:34:15.710
+C Tweak\s'make\stclextension'\sto\spass\son\sany\s--with-icu-config\sbuild\sflags\sso\sthat\sit\scan\slink\swith\sthe\svarious\sICU\slibs.\sThis\sworks\sfor\sme\sbut\sneeds\stesting\son\sa\swider\sselection\sof\ssystems\sbefore\sbeing\smoved\sto\strunk.\sIntended\sto\sresolve\s[forum:92a88de4b88929fe|forum\spost\s92a88de4b88929fe].
+D 2026-04-14T00:11:23.508
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -656,7 +656,7 @@ F ext/wasm/tests/opfs/sahpool/index.html be736567fd92d3ecb9754c145755037cbbd2bca
 F ext/wasm/tests/opfs/sahpool/sahpool-pausing.js f264925cfc82155de38cecb3d204c36e0f6991460fff0cb7c15079454679a4e2
 F ext/wasm/tests/opfs/sahpool/sahpool-worker.js bd25a43fc2ab2d1bafd8f2854ad3943ef673f7c3be03e95ecf1612ff6e8e2a61
 F magic.txt 5ade0bc977aa135e79e3faaea894d5671b26107cc91e70783aa7dc83f22f3ba0
-F main.mk 48f6b3557cefd79e5cfae1f15e32d6a0dffd7b689c582a9a7b3920a4ee18affd
+F main.mk 373574e5affd2a4e68f72d67252d12cf50f75a37d949b19920b8f897f8a3ad57
 F make.bat a136fd0b1c93e89854a86d5f4edcf0386d211e5d5ec2434480f6eea436c7420c
 F mptest/config01.test 3c6adcbc50b991866855f1977ff172eb6d901271
 F mptest/config02.test 4415dfe36c48785f751e16e32c20b077c28ae504
@@ -2109,7 +2109,7 @@ F tool/GetTclKit.bat d84033c6a93dfe735d247f48ba00292a1cc284dcf69963e5e672444e045
 F tool/Replace.cs 02c67258801c2fb5f63231e0ac0f220b4b36ba91
 F tool/build-all-msvc.bat 1ee9dbadcc07fc23268025854e97b392bcbad72376b47aee7b22f3797a4f2c87 x
 F tool/build-shell.sh 369c4b171cc877ad974fef691e4da782b4c1e99fe8f4361316c735f64d49280f
-F tool/buildtclext.tcl d09b753d7858314104eeaf5f4def85d35784470279809e47a633f142226f2b3f
+F tool/buildtclext.tcl b58df93e772fec8b2ae44ee1a82d13378e13edb1e94c4ab2f7ee3440a9523bff
 F tool/cg_anno.tcl c1f875f5a4c9caca3d59937b16aff716f8b1883935f1b4c9ae23124705bc8099 x
 F tool/checkSpacing.c 810e51703529a204fc4e1eb060e9ab663e3c06d2
 F tool/cktclsh.sh 6075eef9c6b9ba4b38fef2ca2a66d25f2311bd3c610498d18a9b01f861629cca
@@ -2198,8 +2198,11 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 414ae4dd65182ce571a6abb1a1a2ba2c169b204156f4f8923c42f64805a3ef9f
-R cf324d5615b6d300c87a4273e5c0525e
-U drh
-Z 7119036f9ab631d62dd86cf043f46eef
+P efb3e808a0281014512a812920d526a4909467e925ea000956606318bb6f2e65
+R e7aba9f29e2f37d977d5ec2c06bfade9
+T *branch * tclextension-icu
+T *sym-tclextension-icu *
+T -sym-trunk * Cancelled\sby\sbranch.
+U stephan
+Z 0d32b701d83e8162aba99c1730e56fac
 # Remove this line to create a well-formed Fossil manifest.
