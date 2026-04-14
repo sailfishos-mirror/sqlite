@@ -1,5 +1,5 @@
-C Tweak\s'make\stclextension'\sto\spass\son\sany\s--with-icu-config\sbuild\sflags\sso\sthat\sit\scan\slink\swith\sthe\svarious\sICU\slibs.\sThis\sworks\sfor\sme\sbut\sneeds\stesting\son\sa\swider\sselection\sof\ssystems\sbefore\sbeing\smoved\sto\strunk.\sIntended\sto\sresolve\s[forum:92a88de4b88929fe|forum\spost\s92a88de4b88929fe].
-D 2026-04-14T00:11:23.508
+C Pass\sthe\sICU-related\sbuild\sflags\sthrough\sthe\s'tclextension'\starget,\snot\sjust\s'tclextension-install'.
+D 2026-04-14T00:48:34.864
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -656,7 +656,7 @@ F ext/wasm/tests/opfs/sahpool/index.html be736567fd92d3ecb9754c145755037cbbd2bca
 F ext/wasm/tests/opfs/sahpool/sahpool-pausing.js f264925cfc82155de38cecb3d204c36e0f6991460fff0cb7c15079454679a4e2
 F ext/wasm/tests/opfs/sahpool/sahpool-worker.js bd25a43fc2ab2d1bafd8f2854ad3943ef673f7c3be03e95ecf1612ff6e8e2a61
 F magic.txt 5ade0bc977aa135e79e3faaea894d5671b26107cc91e70783aa7dc83f22f3ba0
-F main.mk 373574e5affd2a4e68f72d67252d12cf50f75a37d949b19920b8f897f8a3ad57
+F main.mk eca6ab1dc5c1deff83a329e839d1e6b2ea26521fd3c985235f7933146ed0a3f3
 F make.bat a136fd0b1c93e89854a86d5f4edcf0386d211e5d5ec2434480f6eea436c7420c
 F mptest/config01.test 3c6adcbc50b991866855f1977ff172eb6d901271
 F mptest/config02.test 4415dfe36c48785f751e16e32c20b077c28ae504
@@ -2198,11 +2198,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P efb3e808a0281014512a812920d526a4909467e925ea000956606318bb6f2e65
-R e7aba9f29e2f37d977d5ec2c06bfade9
-T *branch * tclextension-icu
-T *sym-tclextension-icu *
-T -sym-trunk * Cancelled\sby\sbranch.
+P a8c022d7946e8a29114400c1321f36f03979a2277253f1dcd769d8f36e944ece
+R af4c8f999c29998f0093ac53269019fe
 U stephan
-Z 0d32b701d83e8162aba99c1730e56fac
+Z 308741ae8b164d75f824eed7a9338d33
 # Remove this line to create a well-formed Fossil manifest.
