@@ -1,5 +1,5 @@
-C Implementation\sof\sthe\sanalyze()\sSQL\sfunction\sis\snow\smostly\scomplete.
-D 2026-04-14T19:36:33.575
+C Various\sminor\stweaks\sand\srefinements\sto\sthe\sanalyze()\sfunction.
+D 2026-04-14T20:07:29.887
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -358,7 +358,7 @@ F ext/jni/src/tests/000-001-ignored.test e17e874c6ab3c437f1293d88093cf06286083b6
 F ext/jni/src/tests/900-001-fts.test bf0ce17a8d082773450e91f2388f5bbb2dfa316d0b676c313c637a91198090f0
 F ext/misc/README.md 6243cdc4d7eb791c41ef0716f3980b8b5f6aa8c61ff76a3958cbf0031c6ebfa7
 F ext/misc/amatch.c 8d237cc014b3736922c26a76a451050d244aa4980c47c531f368f817b1e77b49
-F ext/misc/analyze.c 200aa4a378e54b710cd774d70a3a65d916972bcf695671eff306309cd37fa8da
+F ext/misc/analyze.c 6091e1f4f10d626c17813f9aa80eab5c011900808494647140680fcf6eba8664
 F ext/misc/anycollseq.c 5ffdfde9829eeac52219136ad6aa7cd9a4edb3b15f4f2532de52f4a22525eddb
 F ext/misc/appendvfs.c 9642c7a194a2a25dca7ad3e36af24a0a46d7702168c4ad7e59c9f9b0e16a3824
 F ext/misc/base64.c 1445761667c16356e827fc6418294c869468be934429aaa8315035e76dd58acf
@@ -2199,8 +2199,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 289fefc3edfeecb06dc11897d3ff24763fd9e25db44e369eeec29b9ed3de5ccc
-R 635177803a58986bff71c8ff6e3e87a1
+P 1ca0386ab2df0d88ed52941469d459114f483ecf6b7e4691bcc32e909636cb7d
+R bcb843bc1c4d4ebc599ef058d075bc70
 U drh
-Z cf63c806645e7784cf6fda78da65684e
+Z 2ddf36c598ea4d8a6fbcc42c59861a2b
 # Remove this line to create a well-formed Fossil manifest.
