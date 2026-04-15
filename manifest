@@ -1,5 +1,5 @@
-C On\splatforms\swhich\ssupport\s./configure\s--with-icu-config,\sensure\sthat\s'make\stclextension'\sincludes\sthe\sICU\spieces\sin\sthe\stcl\sextension.\sIntended\sto\sresolve\s[forum:92a88de4b88929fe|forum\spost\s92a88de4b88929fe].
-D 2026-04-15T11:40:13.477
+C Add\sthe\sanalyze()\sSQL\sfunction\simplemented\sthe\sext/misc/analyze.c\sextension\n(but\snot\spart\sof\sthe\samalgamation).\s\sMake\sthat\sfunction\savailable\sin\sthe\nCLI\sand\sadd\sa\snew\s".dbinfo"\scommand\sto\sthe\sCLI\susing\sthat\sfunction.
+D 2026-04-15T12:20:11.500
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -358,6 +358,7 @@ F ext/jni/src/tests/000-001-ignored.test e17e874c6ab3c437f1293d88093cf06286083b6
 F ext/jni/src/tests/900-001-fts.test bf0ce17a8d082773450e91f2388f5bbb2dfa316d0b676c313c637a91198090f0
 F ext/misc/README.md 6243cdc4d7eb791c41ef0716f3980b8b5f6aa8c61ff76a3958cbf0031c6ebfa7
 F ext/misc/amatch.c 8d237cc014b3736922c26a76a451050d244aa4980c47c531f368f817b1e77b49
+F ext/misc/analyze.c c329e7fdd23caebbe5362b25a416a7fda7e1524ddba03be12f1d2e4a903caa02
 F ext/misc/anycollseq.c 5ffdfde9829eeac52219136ad6aa7cd9a4edb3b15f4f2532de52f4a22525eddb
 F ext/misc/appendvfs.c 9642c7a194a2a25dca7ad3e36af24a0a46d7702168c4ad7e59c9f9b0e16a3824
 F ext/misc/base64.c 1445761667c16356e827fc6418294c869468be934429aaa8315035e76dd58acf
@@ -735,7 +736,7 @@ F src/random.c 606b00941a1d7dd09c381d3279a058d771f406c5213c9932bbd93d5587be4b9c
 F src/resolve.c 928ff887f2a7c64275182060d94d06fdddbe32226c569781cf7e7edc6f58d7fd
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
 F src/select.c ffe199f025a0dd74670d2a77232bdea364a4d7b36f32c64a6572d39ba6a11576
-F src/shell.c.in 80252a631730ddaa18b79562f1180b5052f7ff81df007be1474b2d4deea62a65
+F src/shell.c.in 486029de07dea8dbe2c43cd7c86a35257f586894df9716c5998b95a4c96f655a
 F src/sqlite.h.in 39d2e09114d2bdb7afd998f4a469c8f8cd065f8093835a7d0422f260fc78fb4f
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
 F src/sqlite3ext.h 9788c301f95370fa30e808861f1d2e6f022a816ddbe2a4f67486784c1b31db2e
@@ -2198,9 +2199,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 46a288e43e4c48fca6610bce6a2db418aaa3c8a1dcb115b7a0bfad2063355e58 499c89f8745fac7ee93ff79a340abd69b4f06b07983b4d50057fa5d0893b2f3b
-R db917ef2f6d55ce338a45372e37f86ce
-T +closed 499c89f8745fac7ee93ff79a340abd69b4f06b07983b4d50057fa5d0893b2f3b Closed\sby\sintegrate-merge.
-U stephan
-Z 961225be281361a43f6c39148c9a0478
+P 404fde8bacc3f05254a2fcdb1531a7f53125a7ad45dc6b68a5065c1d0c73b670 a138e44a243466f8679e9652421f8c893a4a1bc0addc86736588d9aee51cf090
+R ff0c791327f8fe05be437b1f94dcbcf7
+T +closed a138e44a243466f8679e9652421f8c893a4a1bc0addc86736588d9aee51cf090
+U drh
+Z 46124efa82bcc70d0272aac3910fff60
 # Remove this line to create a well-formed Fossil manifest.
