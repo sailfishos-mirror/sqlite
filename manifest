@@ -1,12 +1,12 @@
-C Add\sthe\sanalyze()\sSQL\sfunction\simplemented\sthe\sext/misc/analyze.c\sextension\n(but\snot\spart\sof\sthe\samalgamation).\s\sMake\sthat\sfunction\savailable\sin\sthe\nCLI\sand\sadd\sa\snew\s".dbinfo"\scommand\sto\sthe\sCLI\susing\sthat\sfunction.
-D 2026-04-15T12:20:11.500
+C Fix\sharmless\scompiler\swarnings\sseen\sby\sMSVC\sin\sthe\sprevious\scheck-in.\nAlso\sadd\sext/misc/analyze.c\sto\sthe\smakefile\sdependencies\sfor\sthe\sCLI.
+D 2026-04-15T12:35:23.675
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
 F LICENSE.md 6bc480fc673fb4acbc4094e77edb326267dd460162d7723c7f30bee2d3d9e97d
 F Makefile.in 5fda086f33b144da08119255da1d2557f983d0764a13707f05acf0159fd89ba5
 F Makefile.linux-generic bd3e3cacd369821a6241d4ea1967395c962dfe3057e38cb0a435cee0e8b789d0
-F Makefile.msc 06b757f8648f1d9dd9683dbd72350cf0cf20d6fe09168cac455569b81dd97ddc
+F Makefile.msc aa88f502c6ae09b061f20de74ab3d2a88872845118b8da59fb00ff8996fa3fba
 F README.md e4f1a030f813c2fafc898c66d4f10bff2c75eb1a8f504eb9ad9a5ef80e3ff814
 F VERSION 99cf3be5f13d091183e4314b7fc2e0c0e69accfbe64608b45a313338bbdd7b62
 F art/icon-243x273.gif 9750b734f82fdb3dc43127753d5e6fbf3b62c9f4e136c2fbf573b2f57ea87af5
@@ -358,7 +358,7 @@ F ext/jni/src/tests/000-001-ignored.test e17e874c6ab3c437f1293d88093cf06286083b6
 F ext/jni/src/tests/900-001-fts.test bf0ce17a8d082773450e91f2388f5bbb2dfa316d0b676c313c637a91198090f0
 F ext/misc/README.md 6243cdc4d7eb791c41ef0716f3980b8b5f6aa8c61ff76a3958cbf0031c6ebfa7
 F ext/misc/amatch.c 8d237cc014b3736922c26a76a451050d244aa4980c47c531f368f817b1e77b49
-F ext/misc/analyze.c c329e7fdd23caebbe5362b25a416a7fda7e1524ddba03be12f1d2e4a903caa02
+F ext/misc/analyze.c dc3359a01425d312f39439bc5395c1d275eb12e11c78e1cb23f3980080153408
 F ext/misc/anycollseq.c 5ffdfde9829eeac52219136ad6aa7cd9a4edb3b15f4f2532de52f4a22525eddb
 F ext/misc/appendvfs.c 9642c7a194a2a25dca7ad3e36af24a0a46d7702168c4ad7e59c9f9b0e16a3824
 F ext/misc/base64.c 1445761667c16356e827fc6418294c869468be934429aaa8315035e76dd58acf
@@ -657,7 +657,7 @@ F ext/wasm/tests/opfs/sahpool/index.html be736567fd92d3ecb9754c145755037cbbd2bca
 F ext/wasm/tests/opfs/sahpool/sahpool-pausing.js f264925cfc82155de38cecb3d204c36e0f6991460fff0cb7c15079454679a4e2
 F ext/wasm/tests/opfs/sahpool/sahpool-worker.js bd25a43fc2ab2d1bafd8f2854ad3943ef673f7c3be03e95ecf1612ff6e8e2a61
 F magic.txt 5ade0bc977aa135e79e3faaea894d5671b26107cc91e70783aa7dc83f22f3ba0
-F main.mk eca6ab1dc5c1deff83a329e839d1e6b2ea26521fd3c985235f7933146ed0a3f3
+F main.mk 81db7124eccf19888d235e85f5c3c454499133b9c46f133b5d432d647b281c25
 F make.bat a136fd0b1c93e89854a86d5f4edcf0386d211e5d5ec2434480f6eea436c7420c
 F mptest/config01.test 3c6adcbc50b991866855f1977ff172eb6d901271
 F mptest/config02.test 4415dfe36c48785f751e16e32c20b077c28ae504
@@ -2199,9 +2199,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 404fde8bacc3f05254a2fcdb1531a7f53125a7ad45dc6b68a5065c1d0c73b670 a138e44a243466f8679e9652421f8c893a4a1bc0addc86736588d9aee51cf090
-R ff0c791327f8fe05be437b1f94dcbcf7
-T +closed a138e44a243466f8679e9652421f8c893a4a1bc0addc86736588d9aee51cf090
+P 4c4988e56df3c668b8891e2a55887a6618f5b84e9111e562b93059ddb9a662dc
+R 30b8739f9bda9be6b853c683a0127d57
 U drh
-Z 46124efa82bcc70d0272aac3910fff60
+Z af89e9f2c79f2b2478911bd0a1f21f6d
 # Remove this line to create a well-formed Fossil manifest.
