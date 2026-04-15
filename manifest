@@ -1,5 +1,5 @@
-C Handle\sa\sspecial\scase\sof\sa\scorrupt\schangeset\sin\ssqlite3changegroup_add().
-D 2026-04-15T17:13:42.199
+C Version\snumber\sto\s3.53.1
+D 2026-04-15T19:09:34.971
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -8,7 +8,7 @@ F Makefile.in 5fda086f33b144da08119255da1d2557f983d0764a13707f05acf0159fd89ba5
 F Makefile.linux-generic bd3e3cacd369821a6241d4ea1967395c962dfe3057e38cb0a435cee0e8b789d0
 F Makefile.msc 92391304cf70f4c178b127aa83b88637abd28d1b83ede451616144037ea1d3dd
 F README.md f49fbd826941842e348242f3ab62f240c985ceafdf8fbe576abf4eb75317468c
-F VERSION 31435e19ded2aae3c1c67dacf06a995a37fd1b253baec5899b78d64cd29db4f7
+F VERSION b67c2895a647ba280c284277d895e11f9bcec7435b5755f5dd26c04b3369bd41
 F art/icon-243x273.gif 9750b734f82fdb3dc43127753d5e6fbf3b62c9f4e136c2fbf573b2f57ea87af5
 F art/icon-80x90.gif 65509ce3e5f86a9cd64fe7fca2d23954199f31fe44c1e09e208c80fb83d87031
 F art/sqlite370.eps aa97a671332b432a54e1d74ff5e8775be34200c2
@@ -2197,9 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 2d37af77a139cdcecb959b0821e5ed925f12789a759d0c94dce29d4b30b5750a
-Q +eba625f917935437e3f366197df1c6717c7120ce0418a0cbac1d2024b2235091
-R dcb24cce5d2700ab42d311c352c4aedb
-U dan
-Z 62b8b5c2ca906067709de2d932c7ea99
+P dceee93ab38a623a6c94658583ad6e012e141d5a4eaa91b074de06e175cb4175
+R 7175bfc55ee6a124cb71b7014f30b55e
+U drh
+Z c3b1b90a19b76cb435d9f8b55bd4aecc
 # Remove this line to create a well-formed Fossil manifest.
