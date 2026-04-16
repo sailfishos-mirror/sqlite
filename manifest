@@ -1,5 +1,5 @@
-C Run\sC-language\stests\sin\stests/c/\sas\spart\sof\srelease\stest.
-D 2026-04-16T16:43:32.721
+C Minor\supdates\sto\stestrunner\sdocumentation.
+D 2026-04-16T17:07:23.368
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -63,7 +63,7 @@ F doc/jsonb.md acd77fc3a709f51242655ad7803510c886aa8304202fa9cf2abc5f5c4e9d7ae5
 F doc/lemon.html 2085fda0a90a94fe92159a79dccc5c30d5a2313524887a31659cd66162f17233
 F doc/pager-invariants.txt 83aa3a4724b2d7970cc3f3461f0295c46d4fc19a835a5781cbb35cb52feb0577
 F doc/tcl-extension-testing.md b88861804fc1eaf83249f8e206334189b61e150c360e1b80d0dcf91af82354f5
-F doc/testrunner.md daffa0ebbbe397a73537ae1b19b3124d489ce5f89dfe570781d1f1ef1809597c
+F doc/testrunner.md 3589f7914d36adaff6d108566e09b2c6166887bea00580e5343f8b43615ffe12
 F doc/trusted-schema.md 33625008620e879c7bcfbbfa079587612c434fa094d338b08242288d358c3e8a
 F doc/vdbesort-memory.md 4da2639c14cd24a31e0af694b1a8dd37eaf277aff3867e9a8cc14046bc49df56
 F doc/vfs-shm.txt 1a55f3f0e7b6745931b117ba5c9df3640d7a0536f532ef0052563100f4416f86
@@ -1718,7 +1718,7 @@ F test/temptrigfault.tes fc5918e64f3867156fefe7cfca9d8e1f495134a5229b2b511b0dc11
 F test/temptrigger.test a00f258ed8d21a0e8fd4f322f15e8cfb5cef2e43655670e07a753e3fb4769d61
 F test/tester.tcl 2d943f60200e0a36bcd3f1f0baf181a751cd3604ef6b6bd4c8dc39b4e8a53116
 F test/testloadext.c 862b848783eaed9985fbce46c65cd214664376b549fae252b364d5d1ef350a27
-F test/testrunner.tcl cc5ff144daa48e351cf4523a45998986a1d68f85d5babfd53e372dc1a74f6fdc x
+F test/testrunner.tcl af3dd4e89739b18f9e23ab1c62828cd53a0902e4140269c49485dd6deba9d0f0 x
 F test/testrunner_data.tcl dfcf192d274e965845189cc014ac89fff91dde92b6e2ac9e1262897fc21ee2e0
 F test/testrunner_estwork.tcl 81e2ae10238f50540f42fbf2d94913052a99bfb494b69e546506323f195dcff9
 F test/thread001.test a0985c117eab62c0c65526e9fa5d1360dd1cac5b03bde223902763274ce21899
@@ -2201,9 +2201,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P cb910047edc591102dd4ed0d57c863b366981b8aa1d3085d5f95b1fbbabf6c31 2d81ee65ffbed30fd98bdda96dc79c1929c73f806cea3c9e4c244b618980b202
-R be1926b5db74f71941439938d0fcffd3
-T +closed 2d81ee65ffbed30fd98bdda96dc79c1929c73f806cea3c9e4c244b618980b202
-U dan
-Z cac81702445eb1f77e03aa0851674706
+P e6929022b71c6bff7aa9cfbdb8a5e80499ca856b8c06d4211c55311b48704a08
+R e72d5e901a263ebcbe80388807e7b6df
+U drh
+Z a1fd3877c2c5ab5147c44c97772a52a3
 # Remove this line to create a well-formed Fossil manifest.
