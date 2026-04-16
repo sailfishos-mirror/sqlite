@@ -1,5 +1,5 @@
-C Improved\scomments\sexplaining\sthe\slogic,\sand\simproved\sdiagnostic\smessages\nwhen\stestrunner.tcl\sencounters\strouble\sloading\sthe\ssqlite3\sextension.
-D 2026-04-16T19:33:04.715
+C Fix\stestrunner.tcl\sso\sthat\sit\sdoes\snot\screate\sdirectories\swith\snames\nending\sin\s"sqlite3.o"\sor\s"sqlite3.lo".\s\sUse\s"sqlite3obj"\sfor\sthose\ndirectory\snames\sinstead.\s\sOtherwise\s"make\sclean"\sgets\sconfused.
+D 2026-04-16T19:50:52.858
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1718,7 +1718,7 @@ F test/temptrigfault.tes fc5918e64f3867156fefe7cfca9d8e1f495134a5229b2b511b0dc11
 F test/temptrigger.test a00f258ed8d21a0e8fd4f322f15e8cfb5cef2e43655670e07a753e3fb4769d61
 F test/tester.tcl 2d943f60200e0a36bcd3f1f0baf181a751cd3604ef6b6bd4c8dc39b4e8a53116
 F test/testloadext.c 862b848783eaed9985fbce46c65cd214664376b549fae252b364d5d1ef350a27
-F test/testrunner.tcl 3c0f022bc821f5a9bb79c257c9c196d975578167747e544d4980250b22310c3e x
+F test/testrunner.tcl 1ad787b744277532521a2a9898ac66ee6a8363fbcc1211027db0dadad4ee3214 x
 F test/testrunner_data.tcl dfcf192d274e965845189cc014ac89fff91dde92b6e2ac9e1262897fc21ee2e0
 F test/testrunner_estwork.tcl 81e2ae10238f50540f42fbf2d94913052a99bfb494b69e546506323f195dcff9
 F test/thread001.test a0985c117eab62c0c65526e9fa5d1360dd1cac5b03bde223902763274ce21899
@@ -2201,8 +2201,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P f8507bd5e221783175be2bb7b907c098e0970b1cbcb01817df7217005eab9ab4
-R 8adf41537c2948394c55449fb6e409d2
+P 8d820b0ccfccff94ed5b7297fa587ac27a74e990f233cfe229da7409ab2e3af8
+R a2bdadf3da1687db023a8d77f4881eab
 U drh
-Z 1ff2a9c88997f7224efcc908a6e8128c
+Z 25db714ee66b7ef3d65724bd2119ddd7
 # Remove this line to create a well-formed Fossil manifest.
