@@ -1,5 +1,5 @@
-C Fix\sparsing\sof\soptions\sto\sthe\s.once\scommand.
-D 2026-04-17T01:55:29.492
+C On\splatforms\swhich\ssupport\s./configure\s--with-icu-config,\sensure\sthat\s'make\stclextension'\sincludes\sthe\sICU\spieces\sin\sthe\stcl\sextension.\sIntended\sto\sresolve\s[forum:92a88de4b88929fe|forum\spost\s92a88de4b88929fe].
+D 2026-04-17T04:59:42.856
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -656,7 +656,7 @@ F ext/wasm/tests/opfs/sahpool/index.html be736567fd92d3ecb9754c145755037cbbd2bca
 F ext/wasm/tests/opfs/sahpool/sahpool-pausing.js f264925cfc82155de38cecb3d204c36e0f6991460fff0cb7c15079454679a4e2
 F ext/wasm/tests/opfs/sahpool/sahpool-worker.js bd25a43fc2ab2d1bafd8f2854ad3943ef673f7c3be03e95ecf1612ff6e8e2a61
 F magic.txt 5ade0bc977aa135e79e3faaea894d5671b26107cc91e70783aa7dc83f22f3ba0
-F main.mk bf77c630aeef4ed4b9270e1fd52c35147b529412c00b74ed6eb8aca3466763f6
+F main.mk 2f7de314e2e43b9b8cfebbdaf7e00e05f14e21f41ccf392377f7ec96fba80966
 F make.bat a136fd0b1c93e89854a86d5f4edcf0386d211e5d5ec2434480f6eea436c7420c
 F mptest/config01.test 3c6adcbc50b991866855f1977ff172eb6d901271
 F mptest/config02.test 4415dfe36c48785f751e16e32c20b077c28ae504
@@ -2108,7 +2108,7 @@ F tool/GetTclKit.bat d84033c6a93dfe735d247f48ba00292a1cc284dcf69963e5e672444e045
 F tool/Replace.cs 02c67258801c2fb5f63231e0ac0f220b4b36ba91
 F tool/build-all-msvc.bat 1ee9dbadcc07fc23268025854e97b392bcbad72376b47aee7b22f3797a4f2c87 x
 F tool/build-shell.sh 369c4b171cc877ad974fef691e4da782b4c1e99fe8f4361316c735f64d49280f
-F tool/buildtclext.tcl d09b753d7858314104eeaf5f4def85d35784470279809e47a633f142226f2b3f
+F tool/buildtclext.tcl b58df93e772fec8b2ae44ee1a82d13378e13edb1e94c4ab2f7ee3440a9523bff
 F tool/cg_anno.tcl c1f875f5a4c9caca3d59937b16aff716f8b1883935f1b4c9ae23124705bc8099 x
 F tool/checkSpacing.c 810e51703529a204fc4e1eb060e9ab663e3c06d2
 F tool/cktclsh.sh 6075eef9c6b9ba4b38fef2ca2a66d25f2311bd3c610498d18a9b01f861629cca
@@ -2197,9 +2197,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P b4c1cc5efcc1e538ed71ffd847030d80ab03fe6e6785f14fbad7f6079321d199
-Q +b235a8093734f457c2731af017c99027510d04e5cd1060f5559afbec5409a472
-R 9c76e1fc87040c0e5f7aa24ed9df8ca1
-U drh
-Z 8fcb3a77a5f1ff6a5355c5979bf61c7f
+P fd21b079e9ded037f9ec65f04864684060b8b80d034dfc9b07e01b5a1f75d79a
+Q +404fde8bacc3f05254a2fcdb1531a7f53125a7ad45dc6b68a5065c1d0c73b670
+R 6ce971740e46ec7bf9ec70965226c6b1
+U stephan
+Z c6ad5024701b876dcc240cf36ace084f
 # Remove this line to create a well-formed Fossil manifest.
