@@ -1,5 +1,5 @@
-C Update\sinterrupt2.test\sto\savoid\susing\sTcl_GetCommandInfo()\sfrom\swithin\scalls\sto\sTcl_DeleteCommand().
-D 2026-04-17T15:09:50.911
+C Fix\sa\stest\scase\sthat\sstarted\sfailing\sdue\sto\sa\schange\sin\sthe\shelp\stext\nfor\sthe\s".prompt"\scommand\sof\sthe\sCLI.
+D 2026-04-17T19:12:27.087
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1623,7 +1623,7 @@ F test/sharedA.test 64bdd21216dda2c6a3bd3475348ccdc108160f34682c97f2f51c19fc0e21
 F test/sharedB.test 1a84863d7a2204e0d42f2e1606577c5e92e4473fa37ea0f5bdf829e4bf8ee707
 F test/shared_err.test 32634e404a3317eeb94abc7a099c556a346fdb8fb3858dbe222a4cbb8926a939
 F test/sharedlock.test 5ede3c37439067c43b0198f580fd374ebf15d304
-F test/shell-prompt.sql 5c18599f2b7566172007005206471aefb7e0be593e8f52d37b9ab03a12aa84a6
+F test/shell-prompt.sql 43ed98433bfde83171b5d06c300525154f4cab9230570a326ca606aaef351db6
 F test/shell1.test c84eff209f93ad17ccdf7e1634969fc8231684254edeb21d9b13d67c3179cdb5
 F test/shell2.test dc541d2681503e55466a24d35a4cbf8ca5b90b8fcdef37fc4db07373a67d31d3
 F test/shell3.test 91efdd545097a61a1f72cf79c9ad5b49da080f3f10282eaf4c3c272cd1012db2
@@ -2202,8 +2202,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P ec58a133b4716d4f5a53c38853f8ecdb7a1275b931663ce07c8dc700d845e62e
-R 07efa31320a2d0d563b9b4787d7f417e
-U dan
-Z 63ec5d48442bb08e4c2149b71e529a6e
+P 1979aa0902a43f20d4e396c5f9b9a49aaf0094d8520bf53ce058bb379a7720ab
+R 4253f22afa737c63df05010efc0ec8c6
+U drh
+Z 15807cd58a18a0d52d82d86842b402cf
 # Remove this line to create a well-formed Fossil manifest.
