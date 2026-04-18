@@ -1,5 +1,5 @@
-C Performance\simprovement\sin\sthe\ssubstr()\sand\slength()\sSQL\sfunctions.\nCaution:\sThe\snew\scode\smay\sgive\sdifferent\sresults\sfor\smalformed\sUTF8.\nI\sdo\snot\sconsider\sthat\sto\sbe\sa\sproblem\sby\sthe\sGI/GO\sprinciple.
-D 2026-04-18T12:31:53.096
+C Fix\sa\sharmless\scompiler\swarning\sin\stest/speedtest1.c.
+D 2026-04-18T21:51:32.879
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1670,7 +1670,7 @@ F test/speed4p.explain 6b5f104ebeb34a038b2f714150f51d01143e59aa
 F test/speed4p.test 377a0c48e5a92e0b11c1c5ebb1bc9d83a7312c922bc0cb05970ef5d6a96d1f0c
 F test/speedtest.md ea0c85ebe0ecff8b45ba6cdb26e694871f469009a5a29dcfe634b055f05ab241
 F test/speedtest.tcl b06f6321ef90bb68f18f7b0e430e25203d9da79b80f8926986a0d5f21ac485fb x
-F test/speedtest1.c 6c01252e66f46de0b6b8d5316e03521e2151782104f3608c10262aa5dce85721
+F test/speedtest1.c f9f30f35431bfc1d3ee9acc561624e0c0b4614071044bc302169dd27206a0fca
 F test/spellfix.test 951a6405d49d1a23d6b78027d3877b4a33eeb8221dcab5704b499755bb4f552e
 F test/spellfix2.test dfc8f519a3fc204cb2dfa8b4f29821ae90f6f8c3
 F test/spellfix3.test 0f9efaaa502a0e0a09848028518a6fb096c8ad33
@@ -2202,8 +2202,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P bfe9df1bf4660ce6bdfd11a4f06d32694c93750c7bc0a6432459d9f1089eace4
-R de2467f25321d3500e82ce952370fe34
+P 6124d27a33f4562f40777c2c6318d61709f7b481f23f9ade45064d8ad0700752
+R e86c1696149295e91d8e4801b7acf596
 U drh
-Z 95b69ad4189c911c5e0fd7a3c7f262ca
+Z ddca6afa09f4bb7f9a73b1c413e6771f
 # Remove this line to create a well-formed Fossil manifest.
