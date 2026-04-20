@@ -1,5 +1,5 @@
-C Fix\sa\sharmless\scompiler\swarning\sin\stest/speedtest1.c.
-D 2026-04-18T21:51:32.879
+C Fix\sthe\sfileio\sextension\sfor\sWindows\sbuilds\sso\sthat\sit\sdoes\snot\sdepend\son\nthe\ssqlite3_win32_utf8_to_unicode()\sand\ssqlite3_win32_unicode_to_utf()\nroutines\sthat\sare\sfound\sin\sthe\sSQLite\score.\n[forum:/forumpost/2026-04-20T02:02:56Z|Forum\spost\s2026-04-20T02:02:56Z].
+D 2026-04-20T10:28:19.110
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -375,7 +375,7 @@ F ext/misc/dbdump.c 678f1b9ae2317b4473f65d03132a2482c3f4b08920799ed80feedd2941a0
 F ext/misc/decimal.c 23698283d9365ce66d54b5bb97c01e69b4aa7ac804f226f9117a0d42efd15a65
 F ext/misc/eval.c 04bc9aada78c888394204b4ed996ab834b99726fb59603b0ee3ed6e049755dc1
 F ext/misc/explain.c 9670c8ff7b255eea7845abc5123a4958e74016c16990b10497e56380f91704b9
-F ext/misc/fileio.c e72033f987894ed821bf324a426ed462743399c274f1290dcb646349b6d7548f
+F ext/misc/fileio.c 936c0a7b3382a047d833ad33f62ba59a3847b79ea745bf529797cd344966fbb0
 F ext/misc/fossildelta.c 40add35db7f355d29ae856fe09043e66802fceff6f2551baccb28d794cadbc77
 F ext/misc/fuzzer.c decaca5a3479dfba69576cd41d4e17161eaf154a5438e12d316bbc5853571802
 F ext/misc/ieee754.c 2901d08a586d00a1d3c0fd89e03c57ee9e2b5f013b0daab9e49c7a48a9d5946b
@@ -2202,8 +2202,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 6124d27a33f4562f40777c2c6318d61709f7b481f23f9ade45064d8ad0700752
-R e86c1696149295e91d8e4801b7acf596
+P 13f0fd1daaf787bff6eded4a01c2cf47c79e52cf8812bb344995e28c015a4ed1
+R 31831ad7feed5c76e5222e938d48ee50
 U drh
-Z ddca6afa09f4bb7f9a73b1c413e6771f
+Z c300dd262e9088f424ba1d42dfc17467
 # Remove this line to create a well-formed Fossil manifest.
