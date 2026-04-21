@@ -1,5 +1,5 @@
-C Do\snot\sunnecessarily\sdelay\sopening\sthe\sdatabase\sfile\sin\sthe\sCLI.
-D 2026-04-21T14:39:23.892
+C Fix\san\soff-by-one\sbuffer\ssize\scalculation\sin\sthe\sdecimal.c\sextension.
+D 2026-04-21T16:07:15.552
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -372,7 +372,7 @@ F ext/misc/completion.c 3f5db28e88c3313103b2dd86d910a2944fd500c46754e473493968ce
 F ext/misc/compress.c 8191118b9b73e7796c961790db62d35d9b0fb724b045e005a5713dc9e0795565
 F ext/misc/csv.c 5e9d4dd749e762c144104c0f01db5bf4458735b19081ebe481a64e589a66687a
 F ext/misc/dbdump.c 678f1b9ae2317b4473f65d03132a2482c3f4b08920799ed80feedd2941a06680
-F ext/misc/decimal.c 23698283d9365ce66d54b5bb97c01e69b4aa7ac804f226f9117a0d42efd15a65
+F ext/misc/decimal.c 432e5b03a0e2a68a1846a9852a565a1b546ca9b295deda834e4653f0f5577daa
 F ext/misc/eval.c 04bc9aada78c888394204b4ed996ab834b99726fb59603b0ee3ed6e049755dc1
 F ext/misc/explain.c 9670c8ff7b255eea7845abc5123a4958e74016c16990b10497e56380f91704b9
 F ext/misc/fileio.c 936c0a7b3382a047d833ad33f62ba59a3847b79ea745bf529797cd344966fbb0
@@ -2202,8 +2202,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 1dd3c6a5e50ac3f617683678223e42f48636c17e58905506c5c74cc4bf05845c
-R 32bca141ac1a6704120a754b7441cb8c
+P ab6ee76c1266b753d0749c63890f40db875536ceb4dd3252cc7a3386e386a0c1
+R 0b1ffe31496f163d6247486632ed006d
 U drh
-Z 66b4f6d550cb6edb568aec09f1735753
+Z b35142d5d17c95ba9c2a885c3ed8f26c
 # Remove this line to create a well-formed Fossil manifest.
