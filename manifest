@@ -1,5 +1,5 @@
-C Fix\sthe\sfileio\sextension\sfor\sWindows\sbuilds\sso\sthat\sit\sdoes\snot\sdepend\son\nthe\ssqlite3_win32_utf8_to_unicode()\sand\ssqlite3_win32_unicode_to_utf()\nroutines\sthat\sare\sfound\sin\sthe\sSQLite\score.\n[forum:/forumpost/2026-04-20T02:02:56Z|Forum\spost\s2026-04-20T02:02:56Z].
-D 2026-04-20T10:28:19.110
+C Experimental\schanges\sto\sstar-query\splanning\sheuristics.
+D 2026-04-21T11:01:00.293
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -817,7 +817,7 @@ F src/vxworks.h 9d18819c5235b49c2340a8a4d48195ec5d5afb637b152406de95a9436beeaeab
 F src/wal.c 7340d4f9bb827bd349127cac6b2cf0cb7f76b9fda645f7b9b0bf7a6e0b1e2e7c
 F src/wal.h ba252daaa94f889f4b2c17c027e823d9be47ce39da1d3799886bbd51f0490452
 F src/walker.c d5006d6b005e4ea7302ad390957a8d41ed83faa177e412f89bc5600a7462a014
-F src/where.c a00d35adeb2550249ba02f24e50eecfb99cba34c8d7d5299b295a591219a2e73
+F src/where.c d367b7ca282dab2de350cf4b1cc8ebb24832d53e566bf3f28467d262235a5d14
 F src/whereInt.h 8d94cb116c9e06205c3d5ac87af065fc044f8cf08bfdccd94b6ea1c1308e65da
 F src/wherecode.c 676cb6cb02878643e817d9917a2d3522b83a3736b2cedd3dc8a01d7bb92af6c2
 F src/whereexpr.c e9f7185fba366d9365aa7a97329609e4cf00b3dd0400d069fbaa5187350c17c6
@@ -2202,8 +2202,11 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 13f0fd1daaf787bff6eded4a01c2cf47c79e52cf8812bb344995e28c015a4ed1
-R 31831ad7feed5c76e5222e938d48ee50
+P fe0414a9a3caf6af67f53a5f3534efd5d4bf4978ebce1c591ef62d6961e55701
+R 36dd0e170938bd6639bc2c50bc873597
+T *branch * star-query-experimental
+T *sym-star-query-experimental *
+T -sym-trunk *
 U drh
-Z c300dd262e9088f424ba1d42dfc17467
+Z 324a016049c1cead93b733ce49e0a615
 # Remove this line to create a well-formed Fossil manifest.
