@@ -1,5 +1,5 @@
-C On\splatforms\swhich\ssupport\s./configure\s--with-icu-config,\sensure\sthat\s'make\stclextension'\sincludes\sthe\sICU\spieces\sin\sthe\stcl\sextension.\sIntended\sto\sresolve\s[forum:92a88de4b88929fe|forum\spost\s92a88de4b88929fe].
-D 2026-04-17T04:59:42.856
+C Reformulate\show\sthe\sOPFS\sasync\sproxy\sWorker\sis\sloaded\sfor\sthe\sbundler-friendly\sbuilds\sto\swork\saround\sa\sbug\sin\sVite\sin\swhich\sit\sincompatibly\srewrites\sthe\sWorker's\sURL\sarguments.\sAddresses\sthe\sdiscussion\sat\s[https://github.com/sqlite/sqlite-wasm/pull/159|npm\spackage\sPR\s159]\sand\spatch\svalidated\sby\sJure\sRotar.
+D 2026-04-21T10:15:16.615
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -587,7 +587,7 @@ F ext/wasm/api/README.md a905d5c6bfc3e2df875bd391d6d6b7b48d41b43bdee02ad115b4724
 F ext/wasm/api/extern-post-js.c-pp.js 80accc53cc6ea1e61c721595f42ba95baa7c7ea636807d9507e69403301f8c54
 F ext/wasm/api/extern-pre-js.js cc61c09c7a24a07dbecb4c352453c3985170cec12b4e7e7e7a4d11d43c5c8f41
 F ext/wasm/api/opfs-common-inline.c-pp.js 496ca858af09b7fef2efaece467960611d35f57254078424bcdeac42ded9e85d
-F ext/wasm/api/opfs-common-shared.c-pp.js d0bff21d34fa05a7eb975c4ee608165f96387332101cb05e976953c77434374d
+F ext/wasm/api/opfs-common-shared.c-pp.js 5b5880ced26977931a4fb33aafc6c71206fbee519e82abf9614898d8fa5ec241
 F ext/wasm/api/post-js-footer.js a50c1a2c4d008aede7b2aa1f18891a7ee71437c2f415b8aeb3db237ddce2935b
 F ext/wasm/api/post-js-header.js f35d2dcf1ab7f22a93d565f8e0b622a2934fc4e743edf3b708e4dd8140eeff55
 F ext/wasm/api/pre-js.c-pp.js d6bf82f83f60caa2904bddb95a29cb738b310f672d2796cdc5fe54463ab0d6cd
@@ -2197,9 +2197,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P fd21b079e9ded037f9ec65f04864684060b8b80d034dfc9b07e01b5a1f75d79a
-Q +404fde8bacc3f05254a2fcdb1531a7f53125a7ad45dc6b68a5065c1d0c73b670
-R 6ce971740e46ec7bf9ec70965226c6b1
+P a4f27adb97f2fb8bf44931d3a44f9d05f0485e743ad086177b8f9471ee9dfff5
+R 5869d027752cbb7e6c85972889078829
 U stephan
-Z c6ad5024701b876dcc240cf36ace084f
+Z 85f0e94dfe6e3766a7d33cb5f24da021
 # Remove this line to create a well-formed Fossil manifest.
