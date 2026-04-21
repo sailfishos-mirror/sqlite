@@ -1,5 +1,5 @@
-C Fix\san\soff-by-one\sbuffer\ssize\scalculation\sin\sthe\sdecimal.c\sextension.
-D 2026-04-21T16:07:15.552
+C Correctly\sdequote\sthe\sconstraint\sname\spassed\sto\sALTER\sTABLE\sDROP\sCONSTRAINT.\sThis\simproves\supon\sthe\spartial\sfix\sin\s[7f5afb12f4].\sForum\spost\s[forum:/forumpost/a746b08b87\s|\sa746b08b87].
+D 2026-04-21T18:07:04.400
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -668,7 +668,7 @@ F mptest/multiwrite01.test dab5c5f8f9534971efce679152c5146da265222d
 F sqlite.pc.in 42b7bf0d02e08b9e77734a47798d1a55a9e0716b
 F sqlite3.1 1b9c24374a85dfc7eb8fa7c4266ee0db4f9609cceecfc5481cd8307e5af04366
 F sqlite3.pc.in e6dee284fba59ef500092fdc1843df3be8433323a3733c91da96690a50a5b398
-F src/alter.c e257c51ac9301b3d72be4e1ac39c3c78528aad83194d963a075351344fbc14c7
+F src/alter.c 7d7ddbdc189f0e0c686e32ee170abdddc95c11f2089e40df4ffcee88f5334826
 F src/analyze.c 03bcfc083fc0cccaa9ded93604e1d4244ea245c17285d463ef6a60425fcb247d
 F src/attach.c 7cf07d4fa42b9fc8662237c60c40b730326c30aa90ae5fffc0b18b2d726ebf61
 F src/auth.c ebec42df26b34a62b6750d30d9c2c03554a1c522020182476f7729a439fef04f
@@ -839,7 +839,7 @@ F test/alterauth.test 63442ba61ceb0c1eeb63aac1f4f5cebfa509d352276059d27106ae256b
 F test/alterauth2.test 4b74fa8f184f4736497317feb587b65759eb87d87acfe3a8ef433d4d18bb002b
 F test/altercol.test 3661c432aacb42bc2198dd4611bbb9c3b09fc73251b59edda046109103b8ac00
 F test/altercons.test ea18def4a0f26b9066da56095c9c480df705df4d02e4ae151708fae76f7e3884
-F test/altercons2.test ade124ce5c733d7d939a5b602946eaf4a1825c7e355319a2b00bcc0b34aafe3f
+F test/altercons2.test 4933eadb035fc0ccfc34ed879f69a09051c53907f9dae9c3d36d25f93519ccc7
 F test/altercorrupt.test 2e1d705342cf9d7de884518ddbb053fd52d7e60d2b8869b7b63b2fda68435c12
 F test/alterdropcol.test a653a3945f964d26845ec0cd0a8e74189f46de3119a984c5bc45457da392612e
 F test/alterdropcol2.test 527fce683b200d620f560f666c44ae33e22728e990a10a48a543280dfd4b4d41
@@ -2202,8 +2202,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P ab6ee76c1266b753d0749c63890f40db875536ceb4dd3252cc7a3386e386a0c1
-R 0b1ffe31496f163d6247486632ed006d
-U drh
-Z b35142d5d17c95ba9c2a885c3ed8f26c
+P 24df42104d5fd1cf974f2bf539fa7515808e21e68d64899c39f5fcf3bee49a48
+R 56eca8e32d62fed761e67bb1ca8cdba4
+U dan
+Z 57b418b0e961aa796f55e8d223be7ebd
 # Remove this line to create a well-formed Fossil manifest.
