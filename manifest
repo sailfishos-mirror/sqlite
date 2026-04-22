@@ -1,5 +1,5 @@
-C Detect\sand\somit\scases\swhere\san\sindex\skey\sis\sbeing\sreplaced\swith\san\sidentical\skey.
-D 2026-04-22T16:58:36.117
+C Fix\sP3/P5\sconfusion\sin\sthe\scomment\sabove\sOP_IdxDelete.
+D 2026-04-22T17:31:19.738
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -802,7 +802,7 @@ F src/upsert.c 215328c3f91623c520ec8672c44323553f12caeb4f01b1090ebdca99fdf7b4f1
 F src/utf.c 7267c3fb9e2467020507601af3354c2446c61f444387e094c779dccd5ca62165
 F src/util.c 377af5da226519a0f374dc3c6d408c9d303a92943e3ae5986432c7d52e6679a2
 F src/vacuum.c d3d35d8ae893d419ade5fa196d761a83bddcbb62137a1a157ae751ef38b26e82
-F src/vdbe.c aeb80f9f9e3b7750b14dcaa439bbf026a4c71cd1881da86d04dfa1348ca8a474
+F src/vdbe.c 17630764eb69332cf42f4c1726df5037188a6fcd6748f536dbec1cc2cc392c4a
 F src/vdbe.h 70e862ac8a11b590f8c1eaac17a0078429d42bc4ea3f757a9af0f451dd966a71
 F src/vdbeInt.h c31ba4dc8d280c2b1dc89c6fcee68f2555e3813ab34279552c20b964c0e338b1
 F src/vdbeapi.c 6cdcbe5c7afa754c998e73d2d5d2805556268362914b952811bdfb9c78a37cf1
@@ -1108,6 +1108,7 @@ F test/expr2.test c27327ae9c017a7ff6280123f67aff496f912da74d78c888926d68b46ec75f
 F test/exprfault.test da33606d799718e2f8e34efd0e5858884a1ad87f608774c552a7f5517cc27181
 F test/exprfault2.test c49e84273898969af5dbc4fe6a3f4335f14639799f343590336c9ddf84425965
 F test/expridx1.test b464520126e1d781a7800f8540621c82e8bbc526f089ff8b0b57ffc51feea6b7
+F test/expridx2.test 374fc3a1864e25f724c04a8c2eeec8c7fb14b7306c8de32b63cd6ebf7f7ce64f
 F test/extension01.test 5de412c66276105901c370770175003381fdcb0c4da7054fa43cf4a31e0bfa3a
 F test/external_reader.test 6fdec43eeca23eb32faad1e95a4d1abc402bc8b3db70df12d6fc08a637f4a2b5
 F test/extraquick.test cb254400bd42bfb777ff675356aabf3287978f79
@@ -2202,11 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 5e1b5ff1c170e94956bf77bd38afcad6369cb9f9333864711212af045281ad0e
-R 6a9d04ec755fb9001a47ce242326fc64
-T *branch * index-detect-noop
-T *sym-index-detect-noop *
-T -sym-trunk *
+P 7a01caf0d0864a462eb81b7643dcf89048f4ae56a29d762f0cfc38066218504f
+R f6ba1f248dd30549b7f4f352031f00e3
 U dan
-Z bd48131fa723540fccfa324eb37cb0d1
+Z 3bf4f946ff4dbebc9016cd341c7b13d2
 # Remove this line to create a well-formed Fossil manifest.
