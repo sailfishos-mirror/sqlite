@@ -1,5 +1,5 @@
-C Various\sminor\sbug\sfixes\scherrypicked\sfrom\strunk.
-D 2026-04-21T22:55:44.778
+C Update\sinterrupt2.test\sto\savoid\susing\sTcl_GetCommandInfo()\sfrom\swithin\scalls\sto\sTcl_DeleteCommand().
+D 2026-04-23T11:33:26.512
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1316,7 +1316,7 @@ F test/instrfault.test 95e28efade652e6d51ae11b377088fe523a581a07ec428009e152a4dd
 F test/intarray.test bb976b0b3df0ebb6a2eddfb61768280440e672beba5460ed49679ea984ccf440
 F test/intck01.sql f2d88bf41cdd64f2ed8c3d4f357cf520f017aa2986999ab9a62eb6506ef18106
 F test/interrupt.test ac1ef50ec9ab8e4f0e17c47629f82539d4b22558904e321ed5abea2e6187da7a
-F test/interrupt2.test e4408ca770a6feafbadb0801e54a0dcd1a8d108d
+F test/interrupt2.test 7eaa40a975d950826cd56e6c37f0f0629adfa2d1a8d3333aff0ff7cf86069963
 F test/intpkey.test 7d54711acf553cdd641a40e9c6cfc2bf1a76070074940c1b126442517054320f
 F test/intreal.test 68829a8bb073ee1610ca3f8f9e0f99b0371fb36e0fa64862dd5ced4ef03c2343
 F test/io.test d267fdc8915444a45e19841489033ebe70bb69f6db605b00df70be16b2a80f59
@@ -2197,11 +2197,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P f91099ecee5413b3ab7261461e774436f5a9214101eea10d234135abe70bb444
-Q +2d1d2947b28f5dcbf4c66b594e176038c4e71e61948a88db565c1cb1212657ce
-Q +9387238cb0bb2651c64ecb229072df039577d71fd91546a2f0c94ca9755bf25d
-Q +d0d95a39bc211034071746395ee6dbcfbea9d573d27480655391ba9698f7e214
-R 6756b6bc876bf4ad18628b0f5f7f5a2b
-U drh
-Z f826f21f19f117da333fc78a1dacd400
+P f1276db5dabe797dfeee2afbb9f3a3fe367b5f860a07af88963f16aa3986f7b9
+Q +1979aa0902a43f20d4e396c5f9b9a49aaf0094d8520bf53ce058bb379a7720ab
+R f11617b918910a372381c0b3e84a4c32
+U dan
+Z 388ee07722ec3939f79987bf90a3f40a
 # Remove this line to create a well-formed Fossil manifest.
