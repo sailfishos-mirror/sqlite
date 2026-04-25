@@ -1,5 +1,5 @@
-C Fix\sa\ssingle-byte\sOOB\sread\sthat\scould\soccur\sin\sthe\ssession\smodule\swhen\sconcatenating\spatchsets.
-D 2026-04-25T14:00:29.685
+C Do\snot\srun\sexpridx2.test\sas\spart\sof\sthe\s"journaltest"\spermutation,\sas\sit\srequires\swal\smode.
+D 2026-04-25T14:32:05.309
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1108,7 +1108,7 @@ F test/expr2.test c27327ae9c017a7ff6280123f67aff496f912da74d78c888926d68b46ec75f
 F test/exprfault.test 7475e363c7221847855722e9dd2459cf60088f6b172c0c808dba75f89e1704b8
 F test/exprfault2.test c49e84273898969af5dbc4fe6a3f4335f14639799f343590336c9ddf84425965
 F test/expridx1.test b464520126e1d781a7800f8540621c82e8bbc526f089ff8b0b57ffc51feea6b7
-F test/expridx2.test 8890d483da880ce86bc5f2f6cd93c27af8a3b99871ed039fe385ee99dbeb9455
+F test/expridx2.test 13348ed208a5d18d9cef7d0a70f8e17948d3c0b5b46508c0573b7e983456165f
 F test/extension01.test 5de412c66276105901c370770175003381fdcb0c4da7054fa43cf4a31e0bfa3a
 F test/external_reader.test 6fdec43eeca23eb32faad1e95a4d1abc402bc8b3db70df12d6fc08a637f4a2b5
 F test/extraquick.test cb254400bd42bfb777ff675356aabf3287978f79
@@ -2203,8 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 59795c71e5745e8a27dc596b9f1fc8f137df58a6ec8d8d0dab2b31cf8562796d
-R 3c4f1d363927c77a0338b43645f8f815
+P 60d7cd625a6160ba1bc60fd00fab2e91e0deff42034c6864107c19330b35ea7a
+R 9624c382989005331dc93683602c4ff2
 U dan
-Z 2cd3a403c782b9b8555876358ed7ac46
+Z 1e905b825342255a77f50bd2b13ac15d
 # Remove this line to create a well-formed Fossil manifest.
