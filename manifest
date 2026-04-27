@@ -1,5 +1,5 @@
-C Improvements\sto\stemp-file\scleanup\son\sclose\sin\sthe\sCLI.
-D 2026-04-26T18:35:26.126
+C Feature\sdetection\sfix\sfor\suint128\son\sRISCV\s32-bit,\sreported\sin\s[forum:f8d1417ce8eb2f22|forum\spost\s2026-04-26T11:41:01Z]\sand\svalidated\sby\sthe\sOP.
+D 2026-04-27T05:55:38.108
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -800,7 +800,7 @@ F src/trigger.c 4bf3bfb3851d165e4404a9f9e69357345f3f7103378c07e07139fdd8aeb7bd20
 F src/update.c 3e5e7ff66fa19ebe4d1b113d480639a24cc1175adbefabbd1a948a07f28e37cf
 F src/upsert.c 215328c3f91623c520ec8672c44323553f12caeb4f01b1090ebdca99fdf7b4f1
 F src/utf.c 7267c3fb9e2467020507601af3354c2446c61f444387e094c779dccd5ca62165
-F src/util.c 377af5da226519a0f374dc3c6d408c9d303a92943e3ae5986432c7d52e6679a2
+F src/util.c 08693f1dc8b3a68be4406543f54b1d068be67bffd7ab00b163ec0b9d1c9d4343
 F src/vacuum.c d3d35d8ae893d419ade5fa196d761a83bddcbb62137a1a157ae751ef38b26e82
 F src/vdbe.c 1cd55e8171e4e87054de196c3c4747d44b69041b5ec910cf547ae82a85beb3e4
 F src/vdbe.h 70e862ac8a11b590f8c1eaac17a0078429d42bc4ea3f757a9af0f451dd966a71
@@ -2203,8 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 4e9ee211ca661fe8978b7f676f33ef962ff5c8177bc7c5ad42b19a2fa4482d90
-R 3dad6c18c2c8aca0242ada41edaef876
-U drh
-Z d5ab748eb3952f1319907fdc974e52fb
+P 048c969c34eaaf8c203b996e999a7dbc94c47b4959719af9e6625052520f7135
+R 1862e524bc499e0896e9ec49d43e30a9
+U stephan
+Z fb15428ad6361e7b9f8f5cec9eca34d7
 # Remove this line to create a well-formed Fossil manifest.
