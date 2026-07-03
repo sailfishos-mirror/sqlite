@@ -1,5 +1,5 @@
-C Use\sthe\sEXCLUDE\sclause\swhen\sexpanding\s"*".
-D 2026-07-03T01:27:57.796
+C Minor\sperformance\soptimization\s-\sonly\suse\ssqlite3ExprAttachSubtrees()\nin\sone\splace,\sso\sthat\scompilers\swill\sin-line\sit.
+D 2026-07-03T09:15:50.130
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -729,7 +729,7 @@ F src/os_win.c 1227a3e962b017d676d985a8aec0d64f273991931ea0a0b99773651102f62df4
 F src/os_win.h c06ccc3a090cf54202ea58981c298817f3309d4c9e4d52ad0a02927346493721
 F src/pager.c 678ee3b68638ee427cc1b071b11181d0f2a827f6cb4d6ec7c12d5fa5f6a752d0
 F src/pager.h 6137149346e6c8a3ddc1eeb40aee46381e9bc8b0fcc6dda8a1efde993c2275b8
-F src/parse.y dc11c53d183d26f1931a30f63b9b3a9a2311c50ec1ff6b7bed210a53767c7e1e
+F src/parse.y 7e664cf58cd7b6aef13c308d6ad8e4cfaa5656ff2a4e8c946367853383813dd1
 F src/pcache.c 588cc3c5ccaaadde689ed35ce5c5c891a1f7b1f4d1f56f6cf0143b74d8ee6484
 F src/pcache.h 092b758d2c5e4dabb30eae46d8dfad77c0f70b16bf3ff1943f7a232b0fe0d4ba
 F src/pcache1.c d7ee0f95992501a65379f620b3de1430b64e52e397769938668a9fd9dd1c8145
@@ -2210,8 +2210,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P f38fc2c7d72a5f9eb99314ec3e6e399faf035066e27991fa4f73b07bb807b594
-R 384ba18da0aa70fab024ce5c96b0311d
+P faa3a3fc27039635c10f8e5baa25944bff360f3e1a400e50f226a111ef140fe4
+R 251b904df42892dfd675ec11582ed36a
 U drh
-Z 3ca97555c3e8c92027f91660e1b345f5
+Z 3e1148d9838c583d8ac2847794b11822
 # Remove this line to create a well-formed Fossil manifest.
