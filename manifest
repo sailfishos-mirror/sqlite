@@ -1,5 +1,5 @@
-C Improved\serror\smessages\sfor\sEXCLUDE\sclauses.
-D 2026-07-03T14:38:08.125
+C Add\sa\sfew\ssimple\stest\scases.
+D 2026-07-03T15:08:18.442
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1101,6 +1101,7 @@ F test/eqp2.test 188bc2293b9dab0932b6ac50c3fec62976815df072d7814d5547c821a863081
 F test/errmsg.test eae9f091eb39ce7e20305de45d8e5d115b68fa856fba4ea6757b6ca3705ff7f9
 F test/errofst1.test 6da78363739ba8991f498396ab331b5d64e7ab5c4172c12b5884683ef523ac53
 F test/eval.test 73969a2d43a511bf44080c44485a8c4d796b6a4f038d19e491867081155692c0
+F test/exclude1.test 6697883838873d749c182646bc949c19c2a52ff28d640a3a415638aca930d8ee
 F test/exclusive.test 7ff63be7503990921838d5c9f77f6e33e68e48ed1a9d48cd28745bf650bf0747
 F test/exclusive2.test cd70b1d9c6fffd336f9795b711dcc5d9ceba133ad3f7001da3fda63615bdc91e
 F test/exec.test e949714dc127eaa5ecc7d723efec1ec27118fdd7
@@ -2210,8 +2211,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 40bd447c4bd5412f8babafa405a3d0dc739107e6b450ca23da4659eeb964e8b9
-R 93fc78c5ff17e3d6b1d02d4df44aecd8
+P 7a80577fcf8101e563727c4a96970eb7252c4f19e0671aa352ab2d9b1deebb7f
+R 59b93cc45187418701dcc3bafc3f568c
 U drh
-Z 8be4dfeb91e8ba3c82e0697a582239f3
+Z 52aafe629d9290dbbf134beca7c4eea1
 # Remove this line to create a well-formed Fossil manifest.
