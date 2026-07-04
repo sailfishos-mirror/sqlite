@@ -1,5 +1,5 @@
-C Fix\spossible\sone-byte\sOOB\sread\sin\sthe\sfossildelta.c\sextension.
-D 2026-07-04T09:28:12.969
+C The\sjsonSkipLabel()\sroutine,\spart\sof\sjson_each()\sand\sjson_next(),\sshould\nnever\sreturn\san\sindex\soutside\sof\sthe\srange\sof\sbytes\sof\sthe\sinput\sJSONB.
+D 2026-07-04T12:16:31.629
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -698,7 +698,7 @@ F src/hash.h 46b92795a95bfefb210f52f0c316e9d7cdbcdd7e7fcfb0d8be796d3a5767cddf
 F src/hwtime.h 21c2cf1f736e7b97502c3674d0c386db3f06870d6f10d0cf8174e2a4b8cb726e
 F src/in-operator.md 10cd8f4bcd225a32518407c2fb2484089112fd71
 F src/insert.c dfd311b0ac2d4f6359e62013db67799757f4d2cc56cca5c10f4888acfbbfa3fd
-F src/json.c e5c7ee78e64fbaf250372f936cff40304acd57ab0185fabfe319d81ce7dd7c37
+F src/json.c 4e4c09d05188bb4d4dc665e1d4409ce55d66ee87478a38c454dd4936558e14bd
 F src/legacy.c d7874bc885906868cd51e6c2156698f2754f02d9eee1bae2d687323c3ca8e5aa
 F src/loadext.c 56a542244fbefc739a2ef57fac007c16b2aefdb4377f584e9547db2ce3e071f9
 F src/main.c 348784a162acc19d62373560c2fa93886520e0dd94f19bfe8bd2491280e95607
@@ -1359,7 +1359,7 @@ F test/json/json-generator.tcl dc0dd0f393800c98658fc4c47eaa6af29d4e17527380cd286
 F test/json/json-q1.txt 65f9d1cdcc4cffa9823fb73ed936aae5658700cd001fde448f68bfb91c807307
 F test/json/json-speed-check.sh 45862b216f1f8bbf16d74e2ad6ea20c773ee77774b299a7e0f76a22eb98e91f1 x
 F test/json/jsonb-q1.txt 1e180fe6491efab307e318b22879e3a736ac9a96539bbde7911a13ee5b33abc7
-F test/json101.test 34109fe1bfa384774ceea2a174de00e0b77e8a7b586bf30bdc9a60d7377ed15b
+F test/json101.test 320107839fef110de72d3950340e19ba21c7e77f09c88657eed6d4a453e4352d
 F test/json102.test ea5c9811e408e115c8fc539548deef431fda4924c23cacd79dd4b783f4449f07
 F test/json103.test e626d109cd0bdb8282ec9bf755af3befa50e3e03a255362fc53433d31e1d66d4
 F test/json104.test 1b844a70cddcfa2e4cd81a5db0657b2e61e7f00868310f24f56a9ba0114348c1
@@ -2202,9 +2202,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a43c78f9f6a4a83b9bffd519a1a5634086653c8ac94ead9752fef690a4e20e5a
-Q +8001a373d1c91f92639fb34fca18f9667f1ee92eb6bfa49df06b8cc256385292
-R 4e52adc6242aa3e4c4501059635c4469
+P 3d6c32fc0797d97196cc16f66aa00890b5c03e241a5632a0ab27cc46c33a19a3
+Q +96072f5f872c8e62dedf48a4ba47ca5f3bd55e98b122f62199a1d0be06de95b4
+R 8fc15278da7a5d7d28d2a73d99c861e8
 U drh
-Z 414e86f32efc4b0187d37ee24345e8b7
+Z f002c03b8de8d85b6678a3f828ffdec6
 # Remove this line to create a well-formed Fossil manifest.
