@@ -1,5 +1,5 @@
-C The\sjsonSkipLabel()\sroutine,\spart\sof\sjson_each()\sand\sjson_next(),\sshould\nnever\sreturn\san\sindex\soutside\sof\sthe\srange\sof\sbytes\sof\sthe\sinput\sJSONB.
-D 2026-07-04T12:16:31.629
+C Fix\sthe\sparse_create_index()\sSQL\sfunction\screated\sby\sthe\sincremental\nintegrity_check\sextension\sso\sthat\sit\sworks\sfor\swidely\scorrect\sCREATE\sINDEX\nstatements.\nAlso\sfix\sthe\sextension\sso\sthat\sit\sremoves\sthe\sparse_create_index()\sfunction.\nAdd\sthe\ssqlite3_intck_register()\sAPI\sfunction\sso\sthat\sthe\nparse_create_index()\sfunction\scan\sbe\smore\seasily\stested.
+D 2026-07-05T19:18:45.599
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -288,7 +288,7 @@ F ext/intck/intck_common.tcl a61fd2697ae55b0a3d89847ca0b590c6e0d8ff64bebb70920d9
 F ext/intck/intckbusy.test d5ed4ef85a4b1dc1dee2484bd14a4bb68529659cca743327df0c775f005fa387
 F ext/intck/intckcorrupt.test f6c302792326fb3db9dcfc70b554c55369bc4b52882eaaf039cfe0b74c821029
 F ext/intck/intckfault.test cff3f75dff74abb3edfcb13f6aa53f6436746ab64b09fe5e2028f051e985efab
-F ext/intck/sqlite3intck.c 134e65f5999f1b6a0d82f146f68488cd1bc47391861b497c598bed5198578924
+F ext/intck/sqlite3intck.c c06ae13326e4b5cb4a207d9b82280d12a19ce69d3281196217035e12c3a5af3a
 F ext/intck/sqlite3intck.h 2b40c38e7063ab822c974c0bd4aed97dabb579ccfe2e180a4639bb3bbef0f1c9
 F ext/intck/test_intck.c 4f9eaadaedccb9df1d26ba41116a0a8e5b0c5556dc3098c8ff68633adcccdea8
 F ext/jni/GNUmakefile 8a94e3a1953b88cf117fb2a5380480feada8b4f5316f02572cab425030a720b4
@@ -738,7 +738,7 @@ F src/random.c 606b00941a1d7dd09c381d3279a058d771f406c5213c9932bbd93d5587be4b9c
 F src/resolve.c f5a780a7b604d43b78bca290cace7479bca0c7d8ef9ce855830d9498b975baec
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
 F src/select.c 80ea6935f8470b97d1212bc1b759b7fadb28351797877f493d0cf598be1fef5e
-F src/shell.c.in a92f97101ecc324d7235e28d72bdea681e437aab5e35e450d9572f67461da268
+F src/shell.c.in 1a88ceda173e9ef60c483357941d9962238d38805d1d2d57a00729e6c08f10b8
 F src/sqlite.h.in 17f32e2b049e704f85a27a6571917c05e6f3c812ee867eb0ba5614ee9cb566cd
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
 F src/sqlite3ext.h 1b7a0ee438bb5c2896d0609c537e917d8057b3340f6ad004d2de44f03e3d3cca
@@ -1318,7 +1318,7 @@ F test/insertfault.test ac63d14ea3b49c573673a572f4014b9117383a03e497c58f308b5c77
 F test/instr.test 67ba309e9697c24a304e98a7c8f372456177dd4e32237d2a305e1e05f7bb79c2
 F test/instrfault.test 95e28efade652e6d51ae11b377088fe523a581a07ec428009e152a4dd0e0f44c
 F test/intarray.test bb976b0b3df0ebb6a2eddfb61768280440e672beba5460ed49679ea984ccf440
-F test/intck01.sql f2d88bf41cdd64f2ed8c3d4f357cf520f017aa2986999ab9a62eb6506ef18106
+F test/intck01.sql b830aef6f1286e60559121cc36ae4e81eb74e9799f51ac431760778167392208
 F test/interrupt.test ac1ef50ec9ab8e4f0e17c47629f82539d4b22558904e321ed5abea2e6187da7a
 F test/interrupt2.test 7eaa40a975d950826cd56e6c37f0f0629adfa2d1a8d3333aff0ff7cf86069963
 F test/intpkey.test 7d54711acf553cdd641a40e9c6cfc2bf1a76070074940c1b126442517054320f
@@ -1634,7 +1634,7 @@ F test/shell7.test 43fd8e511c533bab5232e95c7b4be93b243451709e89582600d4b6e67693d
 F test/shell8.test 38c9e4d7e85d2a3ecfacaa9f6cda4f7a81bf4fffb5f3f37f9cd76827c6883192
 F test/shell9.test c0e8871061a92151450b3332279a893b516fa73a6c46d4f51a0998407cbf8c89
 F test/shellA.test 05cdaafa1f79913654487ce3aefa038d4106245d58f52e02faf506140a76d480
-F test/shellB.test 31df04230f6062069bb7c5d0e5c5439ca44448fa9da1a55aa461a4b872fe6bd9
+F test/shellB.test c3255bb9ee14d66babd239903561d1cb4c22ba60e546dce899bc0e476e5b1dda
 F test/shmlock.test 9f1f729a7fe2c46c88b156af819ac9b72c0714ac6f7246638a73c5752b5fd13c
 F test/shortread1.test bb591ef20f0fd9ed26d0d12e80eee6d7ac8897a3
 F test/show_speedtest1_rtree.tcl 32e6c5f073d7426148a6936a0408f4b5b169aba5
@@ -2202,9 +2202,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 3d6c32fc0797d97196cc16f66aa00890b5c03e241a5632a0ab27cc46c33a19a3
-Q +96072f5f872c8e62dedf48a4ba47ca5f3bd55e98b122f62199a1d0be06de95b4
-R 8fc15278da7a5d7d28d2a73d99c861e8
+P 4ccbd6042af59899c843aa652445675b76931cc880002d34be8d22d597955602
+Q +bd28985523b02875b1045652fe29757e5d5519f48e6109ffebc99212314ab69c
+R 5961c020f6f0be54c8cabc69092dc0cf
 U drh
-Z f002c03b8de8d85b6678a3f828ffdec6
+Z 4b040ec3947c8359f364f1c98b895651
 # Remove this line to create a well-formed Fossil manifest.
