@@ -1,5 +1,5 @@
-C Fix\sthe\sparse_create_index()\sSQL\sfunction\screated\sby\sthe\sincremental\nintegrity_check\sextension\sso\sthat\sit\sworks\sfor\swidely\scorrect\sCREATE\sINDEX\nstatements.\nAlso\sfix\sthe\sextension\sso\sthat\sit\sremoves\sthe\sparse_create_index()\sfunction.\nAdd\sthe\ssqlite3_intck_register()\sAPI\sfunction\sso\sthat\sthe\nparse_create_index()\sfunction\scan\sbe\smore\seasily\stested.
-D 2026-07-05T19:18:45.599
+C Properly\shandle\serrors\sfrom\sthe\sreadlink()\ssystem\scall\sin\sthe\nfileio.c\sextension.
+D 2026-07-05T19:24:50.844
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -376,7 +376,7 @@ F ext/misc/dbdump.c 678f1b9ae2317b4473f65d03132a2482c3f4b08920799ed80feedd2941a0
 F ext/misc/decimal.c 4168943bb0f605058167fc13a3219625f014cb9d30d9c1aed5ecf55e00a0ecfa
 F ext/misc/eval.c 04bc9aada78c888394204b4ed996ab834b99726fb59603b0ee3ed6e049755dc1
 F ext/misc/explain.c 04c9270fd8cf93a9bceb12d2f5f67e3f09a4e58b3e0efe14d24531444d2fffdf
-F ext/misc/fileio.c e72033f987894ed821bf324a426ed462743399c274f1290dcb646349b6d7548f
+F ext/misc/fileio.c 8192f52608ab25f1976c8997775083e2655cb94ff9d194b7b5923b5470d6ce65
 F ext/misc/fossildelta.c eb6a6e11c4aff4a081bfe4d0069e2dc054e1f9005336b6b511c43faf406051ed
 F ext/misc/fuzzer.c 32cef9a29864a1bc1329ccb6dfa613f197bb83491a7612c2ca2c83ee26cd8f14
 F ext/misc/ieee754.c 2901d08a586d00a1d3c0fd89e03c57ee9e2b5f013b0daab9e49c7a48a9d5946b
@@ -2202,9 +2202,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 4ccbd6042af59899c843aa652445675b76931cc880002d34be8d22d597955602
-Q +bd28985523b02875b1045652fe29757e5d5519f48e6109ffebc99212314ab69c
-R 5961c020f6f0be54c8cabc69092dc0cf
+P 88bfcc736144c8b2c8c2c1797a091f03d95da5dcce8a17112c3d724dc1d02813
+Q +85effd2ad321fb7f02b42e200ad2ba27323b0e866fa3412a56db32ab8e048df5
+R 8d975b646534deb3a1d7330227ad5f23
 U drh
-Z 4b040ec3947c8359f364f1c98b895651
+Z 86abc539e6fea032b479031cd8ba26f4
 # Remove this line to create a well-formed Fossil manifest.
