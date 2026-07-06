@@ -1,5 +1,5 @@
-C Fix\san\sOOB\sread\scaused\sby\spassing\san\sout-of-range\sphrase\snumber\sto\sfts5\sauxiliary\sAPI\sxPhraseFirstColumn()\sin\sdetail=columns\smode.
-D 2026-07-06T16:04:51.815
+C Reduce\sdivergence\sbetween\sext/misc/fossildelta.c,\nthe\sdelta\scode\sin\sext/rbu/sqlite3rbu.c,\sand\sFossil\sitself.
+D 2026-07-06T16:26:30.821
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -379,7 +379,7 @@ F ext/misc/diskused.c 0ef61ab38a877430e104d24c6d55f172634563f584bb08af2f33eaa04a
 F ext/misc/eval.c 04bc9aada78c888394204b4ed996ab834b99726fb59603b0ee3ed6e049755dc1
 F ext/misc/explain.c 04c9270fd8cf93a9bceb12d2f5f67e3f09a4e58b3e0efe14d24531444d2fffdf
 F ext/misc/fileio.c f32d7488e229cc52283b6f8d9370b004aa92e7a3054aef320cbdbdecb08c4ee5
-F ext/misc/fossildelta.c d379a8c76fa2c0ff99edc8259951cacf454f73afb8af51976e78f1e4f3a42bd1
+F ext/misc/fossildelta.c 5513fe1aae0d168fb5e798cd04a4d0e5fd15f39ca64c37b0eb63123602acc8e7
 F ext/misc/fuzzer.c 32cef9a29864a1bc1329ccb6dfa613f197bb83491a7612c2ca2c83ee26cd8f14
 F ext/misc/ieee754.c 2901d08a586d00a1d3c0fd89e03c57ee9e2b5f013b0daab9e49c7a48a9d5946b
 F ext/misc/memstat.c 03ab52d2d841eb3f55118105c1964d5225f152b23bd708844c648b48d14ccbcf
@@ -472,7 +472,7 @@ F ext/rbu/rbuvacuum.test e3585cfda220038e8186c583e9bd2aaa9eccd0a5c2e40ed861de3c9
 F ext/rbu/rbuvacuum2.test 1a9bd41f127be2826de2a65204df9118525a8af8d16e61e6bc63ba3ac0010a23
 F ext/rbu/rbuvacuum3.test 3ce42695fdf21aaa3499e857d7d4253bc499ad759bcd6c9362042c13cd37d8de
 F ext/rbu/rbuvacuum4.test ffccd22f67e2d0b380d2889685742159dfe0d19a3880ca3d2d1d69eefaebb205
-F ext/rbu/sqlite3rbu.c bd140b35444f35c8ab5e6332251a16832fc2581bbbab9aa33226bc852a31313f
+F ext/rbu/sqlite3rbu.c e2df7c1e15b439e17b1bb176f935fe8907d1d762faadaa8844301a2985ea2f1d
 F ext/rbu/sqlite3rbu.h e3a5bf21e09ca93ce4e8740e00d6a853e90a697968ec0ea98f40826938bdb68e
 F ext/rbu/test_rbu.c 8b6e64e486c28c41ef29f6f4ea6be7b3091958987812784904f5e903f6b56418
 F ext/recover/dbdata.c 10d3c56968a9af6853722a47280805ad1564714d79ea45ac6f7da14bb57fd137
@@ -2213,8 +2213,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 0bfba3824f3d4c136db8479c97bd789fa0df7c86ba95bd0f011c569004be2166
-R 5058ab107d87f08c2ffa1cdfde5ddf10
-U dan
-Z e1bf6439edecbab962bcd3e56ea252b7
+P aeb85fdfca0a546cfd3ef26efd58b9ffc8d5fda15562558d8479dee55321596f
+R 1ee393656bab6e0046f97e98b14c8cbd
+U drh
+Z 617b711efa64511b929c4bdfdf8bb7a8
 # Remove this line to create a well-formed Fossil manifest.
