@@ -1,5 +1,5 @@
-C In\sthe\sstrdup.c\sexpension,\sdo\snot\sinvoke\smemcpy()\swith\sa\sNULL\spointer\neven\sif\sthe\scount\sis\szero.
-D 2026-07-06T11:34:46.416
+C Return\san\serror\sif\sa\spatchset\sis\spassed\sto\ssqlite3rebaser_configure().\sThis\swas\scausing\sa\sbuffer\soverread.
+D 2026-07-06T11:58:21.031
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -573,14 +573,14 @@ F ext/session/sessionnoact.test 2cf060c12a7a23e663f0ec796561e58638c5c10a846653d3
 F ext/session/sessionnoop.test a9366a36a95ef85f8a3687856ebef46983df399541174cb1ede2ee53b8011bc7
 F ext/session/sessionnoop2.test 2d8146321785bdc7cee8966d984560184cfca83fd46da2ff81ea883d6e977b36
 F ext/session/sessionrebase.test 702378bdcb5062f1106e74457beca8797d09c113a81768734a58b197b5b334e2
-F ext/session/sessionrebase2.test 138697941ea23ab5a3f9960b58efcfdfed343a3c0fe9de8461f9439b7aac6998
+F ext/session/sessionrebase2.test b3c9ca8f40290d9bca97beec6f985d8e56fee80328ea639ee0a0104275a9b4a9
 F ext/session/sessionrowid.test 85187c2f1b38861a5844868126f69f9ec62223a03449a98a80600a44396f7363
 F ext/session/sessionsize.test 8fcf4685993c3dbaa46a24183940ab9f5aa9ed0d23e5fb63bfffbdb56134b795
 F ext/session/sessionstat1.test 5e718d5888c0c49bbb33a7a4f816366db85f59f6a4f97544a806421b85dc2dec
 F ext/session/sessionwor.test 6fd9a2256442cebde5b2284936ae9e0d54bde692d0f5fd009ecef8511f4cf3fc
-F ext/session/sqlite3session.c eea6e55a4353262ec7b23833d7cf4947c0264283ea75b6ddc80b46f2d0165cfe
+F ext/session/sqlite3session.c 673a2c71a3e1fc909301ed15daa30485d774419d015eb7688c79396e6cba6378
 F ext/session/sqlite3session.h ca7c4422c1514a95056cc8d333217df6b1829d39058126b1de85d10cd62d7a9c
-F ext/session/test_session.c d3275da24b8d362e3c2b393c00d5248f75f1cd474dadf29d8c4683f75cb52e6d
+F ext/session/test_session.c f465f13c661919f8ba4485a9d0690c4df5bff1cc79e962cfdafa9ff376d5119f
 F ext/wasm/GNUmakefile 92936a75dc15057dae3a87d96fe8282b22e663edb139852551da9179b437f1b3
 F ext/wasm/README-dist.txt f01081a850ce38a56706af6b481e3a7878e24e42b314cfcd4b129f0f8427066a
 F ext/wasm/README.md 2e87804e12c98f1d194b7a06162a88441d33bb443efcfe00dc6565a780d2f259
@@ -2212,8 +2212,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P ea26bf3cd7fb1116a8a25e767c54a49ca153c29e243b68e523d79120c5832b1d
-R e35c08b3b8e5e545c4cd96dec893c304
-U drh
-Z 9e7a6b8e5db3a42d7ce8732766583f42
+P c56da4bba175cac55ea3f159520a583a8e4739dae77365ffe19e9ffcc5841804
+R d25b86b8076b580de02d8a6f70c15c11
+U dan
+Z 669a6641871f4bac158018ab7302b6de
 # Remove this line to create a well-formed Fossil manifest.
