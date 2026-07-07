@@ -1,5 +1,5 @@
-C Improved\stitle\sseparator\sin\sQRF\swhen\susing\s"-title\salways"\son\san\sempty\srow.\nImproved\scomments\son\sthe\smode\smatrix\sin\sthe\sCLI\scode.\s\sAdditional\stest\ncases.
-D 2026-07-07T12:24:50.291
+C Fix\sa\sproblem\swith\s--rowcount\sfound\sby\sClaude\sin\scode\sreview.
+D 2026-07-07T13:16:30.966
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -425,7 +425,7 @@ F ext/misc/zipfile.c 5cf901996c840b32a5c03d947c4ee86bda166f6e595a41871840df85204
 F ext/misc/zorder.c bddff2e1b9661a90c95c2a9a9c7ecd8908afab5763256294dd12d609d4664eee
 F ext/qrf/README.md 3dfd5de860cdc0c572d8926ba0c1b3cc8925487dfbda10e63af66a8811907687
 F ext/qrf/dev-notes.md e68a6d91ce4c7eb296ef2daadc2bb79c95c317ad15b9fafe40850c67b29c2430
-F ext/qrf/qrf.c e8c8ff93bb834c28921e6b021922750f4fa6ed929f39b95c1137029e141ef25e
+F ext/qrf/qrf.c 680e78e0c5bebe1868f1ce5802108cb693165764fda6c89ed3bb9464d786d9f5
 F ext/qrf/qrf.h fcbc33578176b2fd9dda8310d8f6ba4eaf4f75052f466dfe682802e6664df8bd
 F ext/rbu/rbu.c 801450b24eaf14440d8fd20385aacc751d5c9d6123398df41b1b5aa804bf4ce8
 F ext/rbu/rbu1.test 25870dd7db7eb5597e2b4d6e29e7a7e095abf332660f67d89959552ce8f8f255
@@ -2213,8 +2213,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 386c40e3a9706111542b7f336e82f7bb6e9f43c6056185f9f3bd9aae1159070a
-R 97c4c759605f34012aa08b81926f369d
+P a102d28fca6376da670b274d3d733da2c73da9abe3e7128defd04b4015b03a48
+R a824f55618dbf41f9e2608eae518e831
 U drh
-Z 0742604b3741cfad8c5b1bef622a5b3f
+Z 69608c4abf2d44b478abd4902c004d06
 # Remove this line to create a well-formed Fossil manifest.
