@@ -1,5 +1,5 @@
-C New\scompile-time\soption\sSQLITE_MAX_SCHEMA\sand\sruntime\slimit\soption\nSQLITE_LIMIT_SCHEMA\sthat\sput\san\supper\sbound\son\sthe\snumber\sof\sobjects\nin\sa\sdatabase\sschema.\s\sCurrent\sdefault\sis\s10\smillion.
-D 2026-07-10T15:06:05.593
+C Minor\schange\sto\sthe\s"weekday\sN"\smodifier\sin\sthe\sdate/time\sfunctions\nto\sfacilitate\s100%\smutation\stest\scoverage.
+D 2026-07-11T16:14:16.045
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -689,7 +689,7 @@ F src/build.c 86e97b26600535ab9dffd780ecbdb1560362e81bd2e9bcb179b52b2050c3302b
 F src/callback.c 3605bbf02bd7ed46c79cd48346db4a32fc51d67624400539c0532f4eead804ad
 F src/carray.c 3efe3982d5fb323334c29328a4e189ccaef6b95612a6084ad5fa124fd5db1179
 F src/complete.c f216b970ce99c5a657556cf1f17e7ddd494515d3beb63df426bf59ff43bd3d9a
-F src/date.c 46a518e94cd9c6d0ba1cc4d9af50bcd112a1e24a942e82a35235701731e9b042
+F src/date.c e1a002a4199bfa85e8778c0f72182c679580b131147d8e46d9221cfceffb8500
 F src/dbpage.c c6a9de13b0a01f0bc94a41e16213ab1ecd15ccfe86df7255ced40fda9446257d
 F src/dbstat.c 73362c0df0f40ad5523a6f5501224959d0976757b511299bf892313e79d14f5c
 F src/delete.c 59eeca3fb88c29329afc41bb803ee568b120d9dd7470b5f38ab55cc38390b451
@@ -2214,8 +2214,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P fe52900694e045231e91047fbfd82577c7fa347d7352bd048867a9e95299a0d0
-R 54e660cf10d754b4c7ad7545a1946b03
+P 4ff362a4c2897e2b438d3d8fc88a012264526fa617f058be5a2d596c42d2e8a4
+R 532c3399d6da363d3d9307c2b218e6c7
 U drh
-Z 43294851f89ab63f1857d3510a40d29b
+Z 873660fa174d61c99f29a320a75e9b10
 # Remove this line to create a well-formed Fossil manifest.
