@@ -1,5 +1,5 @@
-C Improvements\sto\sthe\simplementation\sof\ssqlite3_result_str()\sso\sthat\sit\nhas\s100%\smutation\scoverage.
-D 2026-07-11T19:49:54.297
+C Improve\sdocumentation\sfor\ssqlite3_result_zeroblob64().\s\sNo\schanges\nto\scode.
+D 2026-07-12T07:42:55.910
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -744,7 +744,7 @@ F src/resolve.c 54395ee97eb710e695202d4112cf2b1c1c7767a57afcea745df71abb1c917768
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
 F src/select.c f553420eaf5c72a49cef786621eea79dd8c4411671839fb05250bb49ca74a0a0
 F src/shell.c.in fe97e39eb81ba39d0407e3284e76a7629fc39e37526b74720b20cd2dad0f2e55
-F src/sqlite.h.in fc48797193d2a3364767924d181ee9670f57a8b58603ba849b4ab27011d36a85
+F src/sqlite.h.in 2101a2b494cbc282d0dc1c3f631c4fb83060c52876cc9d7615b091ad66d932b1
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
 F src/sqlite3ext.h 0efd4723bad9124ea1f581d9f1ea0254ac1c6f3e5fb29e4f3dcf36c72485a456
 F src/sqliteInt.h 2637dcfb389e48068388146940e541da7c90cb799d42effe9f4f3215fa73618c
@@ -2214,8 +2214,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 76002a6f5de2dadb49ea76571fe395b9c8e261b380068fd2ea88f8326f268109
-R c7fefa46617bfcf06f358295439a0719
+P 121f54c532d51af017d93996c40a694227064f1204429a7df1f1e2daff862eba
+R adafdd5dc444c44b804148afe9cc12c3
 U drh
-Z 48b38b806642294394e8759a475307a0
+Z 9630336b271ae6962b7266ee1d33edbd
 # Remove this line to create a well-formed Fossil manifest.
