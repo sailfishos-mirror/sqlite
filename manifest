@@ -1,5 +1,5 @@
-C Improve\sdocumentation\sfor\ssqlite3_result_zeroblob64().\s\sNo\schanges\nto\scode.
-D 2026-07-12T07:42:55.910
+C Add\sassert()s\sand\sa\stestcase()\sto\sand\sfix\sand\simprove\scomments\sin\nthe\spercentSort()\sroutine.
+D 2026-07-13T14:52:13.130
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -696,7 +696,7 @@ F src/delete.c 59eeca3fb88c29329afc41bb803ee568b120d9dd7470b5f38ab55cc38390b451
 F src/expr.c db0f3e084f4bb2b249a5890dc9a0d3614d503cda009357bfdeb040f96322ccfe
 F src/fault.c 460f3e55994363812d9d60844b2a6de88826e007
 F src/fkey.c 931f74cec1dc8038a0217ef340c91ce147dd1bbed08dc40c47ee0ec6edfffb08
-F src/func.c bb839e662478ffcc9f0377258f32ac9e8257c8e67f1539e08bc5fa3dd185184a
+F src/func.c 208b4d073a1e823df8d0e19d0529093c09a9984851dcfda9808445541cefe6d0
 F src/global.c 7eea537ac0c113ac55cb2dd4d8fc2a6a91ae478be34231b4efaffc46817fee85
 F src/hash.c 03c8c0f4be9e8bcb6de65aa26d34a61d48a9430747084a69f9469fbb00ea52ca
 F src/hash.h 46b92795a95bfefb210f52f0c316e9d7cdbcdd7e7fcfb0d8be796d3a5767cddf
@@ -2214,8 +2214,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 121f54c532d51af017d93996c40a694227064f1204429a7df1f1e2daff862eba
-R adafdd5dc444c44b804148afe9cc12c3
+P c3d307d1367ba08c9ddb9fc26c95131d3e124d7e97896383f21b48cdc154a50a
+R dce27a71b4f05a6c5b80250cb2210f1a
 U drh
-Z 9630336b271ae6962b7266ee1d33edbd
+Z 6e47befc1532a9c16e5b5298466e897a
 # Remove this line to create a well-formed Fossil manifest.
