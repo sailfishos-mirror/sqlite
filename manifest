@@ -1,5 +1,5 @@
-C Remove\sharmless\s"breakpoint"\scommand\sinserted\sby\sthe\sprevious\scheck-in
-D 2026-07-14T14:52:25.300
+C Adjust\sQRF\sto\sgenerate\slower-case\sHTML\soutput\swith\sthe\sSQLITE_STYLE_Html\nstyle\ssetting.
+D 2026-07-14T17:02:47.865
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -423,10 +423,10 @@ F ext/misc/wholenumber.c e41953e078894e66a0ff05dd6c76a61f904828c9a4620c7255fac26
 F ext/misc/windirent.h 02211ce51f3034c675f2dbf4d228194d51b3ee05734678bad5106fff6292e60c
 F ext/misc/zipfile.c 5cf901996c840b32a5c03d947c4ee86bda166f6e595a41871840df8520458054
 F ext/misc/zorder.c bddff2e1b9661a90c95c2a9a9c7ecd8908afab5763256294dd12d609d4664eee
-F ext/qrf/README.md 3dfd5de860cdc0c572d8926ba0c1b3cc8925487dfbda10e63af66a8811907687
+F ext/qrf/README.md e87f6420a0518a9c15957f3b91fcd7ba774f7641adf56310e408a4e96ed07811
 F ext/qrf/dev-notes.md e68a6d91ce4c7eb296ef2daadc2bb79c95c317ad15b9fafe40850c67b29c2430
-F ext/qrf/qrf.c 93b66548739454b837e0450ceba9b67484b3f9f4589a4ba73169ef9f1e2627d1
-F ext/qrf/qrf.h fcbc33578176b2fd9dda8310d8f6ba4eaf4f75052f466dfe682802e6664df8bd
+F ext/qrf/qrf.c a4b11f21ce066043a642273a3a72e6ea4ee40cc6a6c51f47cf9c914fdda730db
+F ext/qrf/qrf.h 457ab1299039fca5d591246be924eb328397df0d4be35d3a193d78e9c7874b4a
 F ext/rbu/rbu.c 801450b24eaf14440d8fd20385aacc751d5c9d6123398df41b1b5aa804bf4ce8
 F ext/rbu/rbu1.test 25870dd7db7eb5597e2b4d6e29e7a7e095abf332660f67d89959552ce8f8f255
 F ext/rbu/rbu10.test 7c22caa32c2ff26983ca8320779a31495a6555737684af7aba3daaf762ef3363
@@ -1534,7 +1534,7 @@ F test/printf2.test 3f55c1871a5a65507416076f6eb97e738d5210aeda7595a74ee895f2224c
 F test/progress.test ebab27f670bd0d4eb9d20d49cef96e68141d92fb
 F test/ptrchng.test ef1aa72d6cf35a2bbd0869a649b744e9d84977fc
 F test/pushdown.test 46a626ef1c0ca79b85296ff2e078b9da20a50e9b804b38f441590c3987580ddd
-F test/qrf01.test a55372af3e0ac0a8f0cf4b4113c9f9d6621631ab0f5894e869a0d5759826b486
+F test/qrf01.test c5bf2300788e22ebfb6aa3a6ea299ba55e38766a7a8b4ecce4c7a0e36a8ef40d
 F test/qrf02.test 39b4afdc000bedccdafc0aecf17638df67a67aaa2d2942865ae6abcc48ba0e92
 F test/qrf03.test e7efe46d204671726b4707585126cd78d107368de4a7d0c7b8d5157cdd8624ed
 F test/qrf04.test 0894692c998d2401dcc33449c02051b503ecce0c94217be54fb007c82d2d1379
@@ -2214,8 +2214,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a48f4cf312b8a1af03b1dc61d8475fc7448fb927e2573fa98882e7b14c065c65
-R 40d7697e090903955b24e5c10b0cae35
+P 5a4b0b81de1abf9c1b73f026b416b29b9bdddc7a1b73ae5b9aa02f3dde131731
+R 5ca5451ceba84a0338aad30cb6fcd699
 U drh
-Z 1ddddc6d9e8710b0c0c58eb7807be7ad
+Z c5c16572b72ca5414518d30654f89f2d
 # Remove this line to create a well-formed Fossil manifest.
