@@ -1,5 +1,5 @@
-C Update\ssome\stest\scases\sin\sfts5corrupt3.test\sand\sfts5corruptB.test\sto\saccount\sfor\srecent\supdates\sto\sdatabase\sand\srecord\scorruption\sdetection.
-D 2026-07-14T11:46:07.300
+C Remove\sharmless\s"breakpoint"\scommand\sinserted\sby\sthe\sprevious\scheck-in
+D 2026-07-14T14:52:25.300
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -164,7 +164,7 @@ F ext/fts5/test/fts5contentless4.test ec34dc69ef474ca9997dae6d91e072906e0e9a5a4b
 F ext/fts5/test/fts5contentless5.test 38cd0392c730dc7090c550321ce3c24ba4c392bc97308b51a4180e9959dca7b5
 F ext/fts5/test/fts5corrupt.test 237fce1c3261bb3a5bec333b0f0dbf5b105ec32627ef14cccbda3cfe13833193
 F ext/fts5/test/fts5corrupt2.test 4a03a158c2cb617c9f76d26b35c1ef2534124bc0bbddcea38dfd5b170ebea27b
-F ext/fts5/test/fts5corrupt3.test 4f28416903ee4f7d08956906654f08f0193428de19b0d1084d8c1992e6b9cc85
+F ext/fts5/test/fts5corrupt3.test d85d23d3b34ba04d36190eaf4f0f2e53a4b13c446db82b4323a5f63cb83031d1
 F ext/fts5/test/fts5corrupt4.test dc08d19f5b8943e95a7778a7d8da592042504faf18dd93f68f7d7a0d7d7dd733
 F ext/fts5/test/fts5corrupt5.test 541dcee99eee8736f6b252d996a1262a778aa9fbe6344c781f9ea2becfae0bf5
 F ext/fts5/test/fts5corrupt6.test 2d72db743db7b5d9c9a6d0cfef24d799ed1aa5e8192b66c40e871a37ed9eed06
@@ -2214,8 +2214,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P be673351ebdeba8e78ee11941ecb3e178e4d5212ff07f1d2790320af1d52e6a0
-R 66bced70954189c1cac524c4b583ab74
-U dan
-Z 21b295c5a3ba22b0d200f147c4a4c3fb
+P a48f4cf312b8a1af03b1dc61d8475fc7448fb927e2573fa98882e7b14c065c65
+R 40d7697e090903955b24e5c10b0cae35
+U drh
+Z 1ddddc6d9e8710b0c0c58eb7807be7ad
 # Remove this line to create a well-formed Fossil manifest.
