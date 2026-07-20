@@ -1,5 +1,5 @@
-C Improved\sdetection\sand\sreporting\sof\sdeliberate\smisinformation\sin\sthe\nsqlite_schema\stable.
-D 2026-07-20T20:03:12.281
+C Add\stests\sto\sverify\sthat\sthe\sproblem\sreported\sby\sforum\spost\s[forum:/info/2026-07-20T18:27:00Z\s|\s2026-07-20T18:27:00Z]\sis\sonly\sa\sproblem\son\sbranch-3.53,\snot\son\sthis\sbranch.
+D 2026-07-20T20:23:27.299
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1033,6 +1033,7 @@ F test/crash5.test 4aa55e7ac3c4bc511873e457aa65d2827d52da9b51e061511899dadcfe22b
 F test/crash6.test 4c56f1e40d0291e1110790a99807aa875b1647ba
 F test/crash7.test 1a194c4900a255258cf94b7fcbfd29536db572df
 F test/crash8.test 3a0c39c079b441a9b1da22e3edb58817f9dd330c4c3a7f9dd1f9f7c8368ea352
+F test/crash9.test 03082a11471c9468bc0b25440f55a13ee6d27b1b5183f5a64eb0eba887782b6f
 F test/crashM.test d95f59046fa749b0d0822edf18a717788c8f318d
 F test/crashtest1.c 09c1c7d728ccf4feb9e481671e29dda5669bbcc2
 F test/createtab.test 4983b8ee20788404c440444cbe16760162806676e799d97c45d8415245b456ff
@@ -1521,7 +1522,7 @@ F test/pcache.test c8acbedd3b6fd0f9a7ca887a83b11d24a007972b
 F test/pcache2.test 8a801d2b8e4b0ebb99701f026a67a9e84634c8aa24799a842c44003b93250da1
 F test/pendingrace.test e99efc5ab3584da3dfc8cd6a0ec4e5a42214820574f5ea24ee93f1d84655f463
 F test/percentile.test fd78896fa882fa4fbf693640097859721f3629926c2ccf804af5bcb7001fd35b
-F test/permutations.test 23012b2091c0cb8bd07d379f2055c16ec77d0c80bfc37085b1e0d525dcca5dac
+F test/permutations.test 2fbe05e34e126b9a40080454404ea8d08e4805b49623e9524ea5d0a84c5c7c55
 F test/pg_common.tcl 3b27542224db1e713ae387459b5d117c836a5f6e328846922993b6d2b7640d9f
 F test/pragma.test 7d07b7bb76e273215d6a20c4f83c3062cc28976c737ccb70a686025801e86c8f
 F test/pragma2.test e5d5c176360c321344249354c0c16aec46214c9f
@@ -2216,8 +2217,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a2511c6223a08033a2c5c66faee3afa50b992dc18de7a8498c8e3d24ce1376cc
-R 35974747914c9cb01b475b116249dd8f
-U drh
-Z 9d343bcd1773b2ce75149e6b1746dd1a
+P 760af4e455e478f8ab72a574eb5f0141bb57e023beee3d16f9a8c02cbd726e45
+R 639c246212b220ec1d6a32e0dfa2632b
+U dan
+Z b79166e8e2cd76226efc828a3e588b44
 # Remove this line to create a well-formed Fossil manifest.
