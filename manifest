@@ -1,5 +1,5 @@
-C Performance\simprovement\sin\sthe\ssqlite3_initialize()\sinterface.
-D 2026-07-20T11:50:37.472
+C Experimental\s"PRAGMA\sauto_strict=ON;"\sautomatically\sappends\sthe\sSTRICT\nmodifier\sto\sall\snew\sCREATE\sTABLE\sstatements.\s\sProof\sof\sconcept\sonly.\nI\ssuspect\sthat\sthis\sis\sa\sbad\sidea.
+D 2026-07-20T13:20:53.972
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -685,7 +685,7 @@ F src/btmutex.c 30dada73a819a1ef5b7583786370dce1842e12e1ad941e4d05ac29695528daea
 F src/btree.c 462c140d0c1af68d75fd13a082f3c08883cc90496c2f02054ec6ca3592ee4b1c
 F src/btree.h 2ee0ddfdf4f8530ad1d46afffd7da21a0e243bfab10973011ac6f6b7fb4109a1
 F src/btreeInt.h 1e4a7d04e809e98abc39654b6089c60d749a724598041ff553b392a3277e9b98
-F src/build.c 86e97b26600535ab9dffd780ecbdb1560362e81bd2e9bcb179b52b2050c3302b
+F src/build.c 29eec041aebc08e9be38cedfc90862f52ec5f806fe2889922b30884b8d4b5ca7
 F src/callback.c 3605bbf02bd7ed46c79cd48346db4a32fc51d67624400539c0532f4eead804ad
 F src/carray.c 3efe3982d5fb323334c29328a4e189ccaef6b95612a6084ad5fa124fd5db1179
 F src/complete.c f216b970ce99c5a657556cf1f17e7ddd494515d3beb63df426bf59ff43bd3d9a
@@ -747,7 +747,7 @@ F src/shell.c.in ce9ef76da7cc153afaa6aa233a155be885859f41c803a20bdc42d1c628b8cca
 F src/sqlite.h.in 2101a2b494cbc282d0dc1c3f631c4fb83060c52876cc9d7615b091ad66d932b1
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
 F src/sqlite3ext.h 0efd4723bad9124ea1f581d9f1ea0254ac1c6f3e5fb29e4f3dcf36c72485a456
-F src/sqliteInt.h 2637dcfb389e48068388146940e541da7c90cb799d42effe9f4f3215fa73618c
+F src/sqliteInt.h e4b4f505c686429f6efbc29c4c1608b84b68feb1bd7f5a7141c68fec202e8ddb
 F src/sqliteLimit.h 7617f2ee673dab382046beba4552283f442cf1a181bb169ac38eb908135dd8da
 F src/status.c 7565d63a79aa2f326339a24a0461a60096d0bd2bce711fefb50b5c89335f3592
 F src/table.c 0f141b58a16de7e2fbe81c308379e7279f4c6b50eb08efeec5892794a0ba30d1
@@ -896,6 +896,7 @@ F test/autoindex2.test 12ef578928102baaa0dc23ad397601a2f4ecb0df
 F test/autoindex3.test ca502c8050166ac6107a7b4fe4e951f4d3270a23a958af02b14f1b962b83c4b6
 F test/autoindex4.test 3c2105e9172920e26f950ba3c5823e4972190e022c1e6f260ba476b0af24c593
 F test/autoindex5.test 3fb938cbf4e7f3896563ce04e2a24b0bc653fc6245b4bf3268cd7b20f441d87f
+F test/autostrict.test 92f68b00e512a1a8fafcb9a4b11fd20f0324e746a37bda2ada0240cf6b802a01
 F test/autovacuum.test 00671369bbf96c6a49989a9425f5b78b94075d6a4b031e5e00000c2c32f365df
 F test/autovacuum2.test 76f7eb4fe6a6bf6d33a196a7141dba98886d2fb53a268d7feca285d5da4759d7
 F test/autovacuum_ioerr2.test 8a367b224183ad801e0e24dcb7d1501f45f244b4
@@ -2163,7 +2164,7 @@ F tool/mkmsvcmin.tcl d76c45efda1cce2d4005bcea7b8a22bb752e3256009f331120fb4fecb14
 F tool/mkopcodec.tcl 33d20791e191df43209b77d37f0ff0904620b28465cca6990cf8d60da61a07ef
 F tool/mkopcodeh.tcl 2b4e6967a670ef21bf53a164964c35c6163277d002a4c6f56fa231d68c88d023
 F tool/mkopts.tcl 680f785fdb09729fd9ac50632413da4eadbdf9071535e3f26d03795828ab07fa
-F tool/mkpragmatab.tcl 3801ce32f8c55fe63a3b279f231fb26c2c1a2ea9a09d2dd599239d87a609acec
+F tool/mkpragmatab.tcl 8b427e948a8b5b070819f826cc88c27c0355edc6233e3024d9c39620b7ddb6ea
 F tool/mkshellc.tcl da6918b128e928a8f0d663519e14829153e59465bd5eb596442e99fa10a411b7
 F tool/mksourceid.c 36aa8020014aed0836fd13c51d6dc9219b0df1761d6b5f58ff5b616211b079b9
 F tool/mksqlite3c-noext.tcl 351c55256213154cabb051a3c870ef9f4487de905015141ae50dc7578a901b84
@@ -2215,8 +2216,11 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 987ba5a3dc5f2a2294b77ef3ec1ea06682f0530a7268777c6b64985dd0e90d40
-R 225576c20d8aa54d888d7e314b9b6b32
+P 4ad701b085ce1b9ada41441f560e55580f0dd33e8145857afce6c665aa974ad0
+R 89b5c97aa8ef3da11b7b1f949af8688c
+T *branch * auto-strict
+T *sym-auto-strict *
+T -sym-trunk *
 U drh
-Z dff319d19633fb41fe302187d5c63413
+Z 6af1bf088201c585b56dd7cdd9cdad69
 # Remove this line to create a well-formed Fossil manifest.
