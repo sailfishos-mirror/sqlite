@@ -1,5 +1,5 @@
-C Random\smakefile\sdoc\supdates.\sNo\sfunctional\schanges.
-D 2026-07-21T20:56:55.567
+C Remove\san\sunnecessary\smunmap()\sfrom\sthe\sunix\sinterface.
+D 2026-07-21T23:54:01.789
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -727,7 +727,7 @@ F src/os.h 1ff5ae51d339d0e30d8a9d814f4b8f8e448169304d83a7ed9db66a65732f3e63
 F src/os_common.h 6c0eb8dd40ef3e12fe585a13e709710267a258e2c8dd1c40b1948a1d14582e06
 F src/os_kv.c 713336d0c646720a9ccbd5bc6fe217bb4924dd28adea25d83a2af5346cb030e6
 F src/os_setup.h 8efc64eda6a6c2f221387eefc2e7e45fd5a3d5c8337a7a83519ba4fbd2957ae2
-F src/os_unix.c 83759942d1ea8d59daed50901c123016f845fada74caf3496b8a2537c9a08838
+F src/os_unix.c 35a8fa7a11c335da484fe887efa23447fef01b63b6bbc032ec3610f94c2db024
 F src/os_win.c 1227a3e962b017d676d985a8aec0d64f273991931ea0a0b99773651102f62df4
 F src/os_win.h c06ccc3a090cf54202ea58981c298817f3309d4c9e4d52ad0a02927346493721
 F src/pager.c 678ee3b68638ee427cc1b071b11181d0f2a827f6cb4d6ec7c12d5fa5f6a752d0
@@ -2217,8 +2217,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a24064919bcc187d5a4d9fa67cb1810fc4e7b9c92596fd2c8e6b0a66bc37e4b3
-R 6c02df29c06cbc9bfa3b4ee8f52145d6
-U stephan
-Z 6dbaa3c79fb84d3f8bfc19f8334094ab
+P 014ef252c7ea404340a5af52a6615cdddd969a4dbf30712fda538550240bb9fc
+R db35009292f15ec72dcee511d1de692d
+U drh
+Z 5b418561771d835342ccd84f22544807
 # Remove this line to create a well-formed Fossil manifest.
