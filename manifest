@@ -1,5 +1,5 @@
-C Add\ssupport\sfor\s(make\sbase64.wasm=1),\swhich\sembeds\ssqlite3.wasm\sinto\sits\scorresponding\sJS\sfile\sas\sbase64.\sA\svery\sexpensive\scalculator\swhich\swas\sfed\sthe\sresulting\sfile\ssizes\sassures\sme\sthat\sthe\stwo-file\sapproach\sis,\sin\sthe\saggregate,\smore\sefficient\sboth\sin\sterms\sof\soverall\snetwork\sbandwidth\s(+~20%\sbigger\sfor\sbase64)\sand\sclient-side\smemory\susage\s(streaming\svs\snon-streaming\swasm\scompilation),\sso\swe'll\sshelve\sthis\sas\san\sinteresting\sexperiment\sor\smaybe\sfor\suse\sby\scustom\sbuilds.
-D 2026-07-21T16:04:10.298
+C Consolidate\sa\sduplicated\scode\sblock\sand\sensure\sthat\sthe\snew\sfiltering\sof\sthe\sfinal\sJS\sfiles\smakes\sthem\sread/write\sso\sthat\srebuilds\swithout\sa\sclean\sbetween\sthem\swork.
+D 2026-07-21T16:12:06.684
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -598,7 +598,7 @@ F ext/wasm/api/opfs-common-inline.c-pp.js 496ca858af09b7fef2efaece467960611d35f5
 F ext/wasm/api/opfs-common-shared.c-pp.js 9a9019bcc070d7c90829af5f5eb81d25135bf9543944a691631c0184f0c62416
 F ext/wasm/api/post-js-footer.js a50c1a2c4d008aede7b2aa1f18891a7ee71437c2f415b8aeb3db237ddce2935b
 F ext/wasm/api/post-js-header.js f35d2dcf1ab7f22a93d565f8e0b622a2934fc4e743edf3b708e4dd8140eeff55
-F ext/wasm/api/pre-js.c-pp.js e7b41b3f1dd40da5476cc2beec9008af3843732541e9ce554536cb66b9a544ae
+F ext/wasm/api/pre-js.c-pp.js da89ab1d97b02b18cf2c33618b330ff747f6182667d8d164e7fe9acc39ea9a0a
 F ext/wasm/api/sqlite3-api-glue.c-pp.js 31a721ada7225838a61310a9f3f797fa5275353f8e9b0ae769d85b437be061f5
 F ext/wasm/api/sqlite3-api-oo1.c-pp.js 35e4727010f15fd72ead0dd1eb4e3c2c9bb1cc60e51544cbdff1f7c14f209de2
 F ext/wasm/api/sqlite3-api-prologue.js 0084e15d66fbcd75cacbaa58e3b473d5e57082c30f3122be7fdadff5589cf6b6
@@ -638,7 +638,7 @@ F ext/wasm/jaccwabyt/jaccwabyt.js 4e2b797dc170851c9c530c3567679f4aa509eec0fab73b
 F ext/wasm/jaccwabyt/jaccwabyt.md 6aa90fa1a973d0ad10d077088bea163b241d8470c75eafdef87620a1de1dea41
 F ext/wasm/libcmpp.c 456b5c39eb9a65a0835c3a9b16f85d9c53330a31c810d7e6c15e5893488f9287
 F ext/wasm/mkdist.sh f8883b077a2ca47cf92e6f0ce305fbf72ca648c3501810125056c4b09c2d5554 x
-F ext/wasm/mkwasmbuilds.c e689304a63bcb6d09ec4046c706e92ce32cb97896248bb34be2f2f988fb41c03
+F ext/wasm/mkwasmbuilds.c afaba6a5b79ff6adeb13cea26b62722828593e8cdbed55cf5563c61b2d94780c
 F ext/wasm/module-symbols.html e54f42112e0aac2a31f850ab33e7f2630a2ea4f63496f484a12469a2501e07e2
 F ext/wasm/scratchpad-wasmfs.html a3d7388f3c4b263676b58b526846e9d02dfcb4014ff29d3a5040935286af5b96
 F ext/wasm/scratchpad-wasmfs.mjs 66034b9256b218de59248aad796760a1584c1dd842231505895eff00dbd57c63
@@ -2217,8 +2217,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 0467a0f826b5b7bb65d9c74df80c7443f01824c1cc8184417849a74791f491b7
-R a2f656d7d331f000ff17a5ffcbf6eb95
+P a167aee75198ff08b20b448fecd3267ed4a70af2472c02605318a5613f446fc6
+R b9cf5cbd2d81fb4e9ce01644a79377fa
 U stephan
-Z 4ead1d14385d2197e032e9be0a72938f
+Z 6d139c01f999ac8973c7911411aed2d5
 # Remove this line to create a well-formed Fossil manifest.
