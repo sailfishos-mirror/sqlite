@@ -4920,6 +4920,7 @@ char *sqlite3VMPrintf(sqlite3*,const char*, va_list);
 #endif
 #if defined(SQLITE_TEST)
   void *sqlite3TestTextToPtr(const char*);
+  const char *sqlite3TestPtrToText(void*);
 #endif
 
 #if defined(SQLITE_DEBUG)
