@@ -704,7 +704,7 @@ static u64 filterHash(const Mem *aMem, const Op *pOp){
       h += p->u.i;
     }else if( p->flags & MEM_Real ){
       h += sqlite3VdbeIntValue(p);
-    }else if( p->flags & (MEM_Str|MEM_Blob) ){
+    }else if( p->flags & MEM_Str ){
       u64 x;
       h += p->n;
       if( p->n >= sizeof(x) ){
@@ -717,6 +717,15 @@ static u64 filterHash(const Mem *aMem, const Op *pOp){
         memcpy(&x, p->z, p->n);
         h += x;
       }
+    }else if( p->flags & MEM_Blob ){
+      int n = p->n;
+      u64 x = 0;
+      if( n ){
+        memcpy(&x, p->z, MIN(n, sizeof(x)));
+        h += x;
+      }
+      h += n;
+      if( p->flags & MEM_Zero ) h += p->u.nZero;
     }
   }
   return h;

@@ -1,5 +1,5 @@
-C Add\sthe\sability\sfor\sBloom\sfilters\sto\swork\son\stext\svalues,\sas\slong\sas\nthe\scollating\ssequence\sis\sBINARY.
-D 2026-07-23T16:00:10.290
+C Fix\sthe\snew\sfilterHash()\sfunction\sso\sthat\sit\sworks\scorrectly\sfor\szeroblobs.
+D 2026-07-23T17:41:10.955
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -809,7 +809,7 @@ F src/upsert.c dd9f0fcccbfb4f20e1026a21a7254ba3f2c08e9cfa92affaff5b5ec3b00ea549
 F src/utf.c 7267c3fb9e2467020507601af3354c2446c61f444387e094c779dccd5ca62165
 F src/util.c fcab5d997364c657e973e2bd3b9d2181aeb0926be0c028f20dfd4445894af3b4
 F src/vacuum.c d3d35d8ae893d419ade5fa196d761a83bddcbb62137a1a157ae751ef38b26e82
-F src/vdbe.c 5ddbf3be0d2a32ee32da6beb17eba46de0d46b4010e8c3aa231e7a7fbf8baa1c
+F src/vdbe.c d8cea3e6b55b9de00b3ae08ae6e3db84269567f98de86a47d30001639dacedf5
 F src/vdbe.h 70e862ac8a11b590f8c1eaac17a0078429d42bc4ea3f757a9af0f451dd966a71
 F src/vdbeInt.h c31ba4dc8d280c2b1dc89c6fcee68f2555e3813ab34279552c20b964c0e338b1
 F src/vdbeapi.c 6ad0c841b6cb87de068f71787f385149d794e8830176bf72d09a36b9f655ac5b
@@ -2217,11 +2217,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 675ed9a486fecc734a6aad2e80fd800183c33f72dce1435a193f0e4cf4ede944
-R 00ac7f20a2b69e84c5ddcc65062ebf36
-T *branch * bloom-filter-on-text
-T *sym-bloom-filter-on-text *
-T -sym-trunk *
+P 2577edc796505a0a6dabccbcc1bb6a828457092caa4d074561da5e58a6f065a2
+R 87295a0ea0d1f9c5765acc4473724fdc
 U drh
-Z 541ba4b4a08222b7d4ea7f9be1e7e44a
+Z 0a7b98af243154566c4b036f9155b275
 # Remove this line to create a well-formed Fossil manifest.
