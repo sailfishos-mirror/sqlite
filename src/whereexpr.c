@@ -1985,8 +1985,6 @@ void sqlite3WhereTabFuncArgs(
 */
 int sqlite3WhereLoopBloomable(const WhereLoop *pLoop){
   if( pLoop->wsFlags & WHERE_IPK ) return 1;
-  if( (pLoop->wsFlags & WHERE_INDEXED)!=0 ){
-    return sqlite3IndexBloomable(pLoop->u.btree.pIndex, pLoop->u.btree.nEq);
-  }
-  return 0;
+  if( NEVER((pLoop->wsFlags & WHERE_INDEXED)==0) ) return 0;
+  return sqlite3IndexBloomable(pLoop->u.btree.pIndex, pLoop->u.btree.nEq);
 }

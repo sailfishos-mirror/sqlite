@@ -1127,6 +1127,48 @@ static void selectExprDefer(
 }
 #endif
 
+#ifdef SQLITE_DEBUG
+/*
+** This is a byte-code validation check that only runs when SQLITE_DEBUG
+** is defined.  This routine looks backwards through the bytecode
+** for the definition of cursor with index iCur.  It extracts the KeyInfo from
+** that cursor (it must be an index cursor) and verifies that the cursor
+** does not use any collating seqeuences other than BINARY for its first
+** nCol columns.
+**
+** This routine is used inside of an assert().  So it should return true
+** on success and false if the invariant is not satisfied.
+**
+** tag-202607231411
+*/
+static int sqlite3CursorBloomable(Parse *pParse, int iCur, int nCol){
+  int i,k;
+  Vdbe *v = pParse->pVdbe;
+  if( pParse->nErr ) return 1;
+  assert( v );
+  for(k=sqlite3VdbeCurrentAddr(v)-1; k>0; k--){
+    const VdbeOp *pOp = sqlite3VdbeGetOp(v, k);
+    const KeyInfo *pKeyInfo;
+    if( pOp->p1!=iCur ) continue;
+    if( pOp->opcode!=OP_OpenRead
+     && pOp->opcode!=OP_OpenWrite
+     && pOp->opcode!=OP_OpenEphemeral
+    ){
+      continue;
+    }
+    assert( pOp->p4type==P4_KEYINFO );
+    pKeyInfo = (const KeyInfo*)pOp->p4.pKeyInfo;
+    assert( pKeyInfo!=0 );
+    for(i=0; i<nCol; i++){
+      assert( sqlite3IsBinary(pKeyInfo->aColl[i]) );
+    }
+    return 1;
+  }
+  return 0;
+}
+#endif /* SQLITE_DEBUG */
+
+
 /*
 ** This routine generates the code for the inside of the inner loop
 ** of a SELECT.
@@ -1397,6 +1439,7 @@ static void selectInnerLoop(
             r1, pDest->zAffSdst, nResultCol);
         sqlite3VdbeAddOp4Int(v, OP_IdxInsert, iParm, r1, regResult, nResultCol);
         if( pDest->iSDParm2 ){
+          assert( sqlite3CursorBloomable(pParse,iParm,nResultCol) );
           sqlite3VdbeAddOp4Int(v, OP_FilterAdd, pDest->iSDParm2, 0,
                                regResult, nResultCol);
           ExplainQueryPlan((pParse, 0, "CREATE BLOOM FILTER"));
@@ -3206,6 +3249,7 @@ static int generateOutputSubroutine(
       sqlite3VdbeAddOp4Int(v, OP_IdxInsert, pDest->iSDParm, r1,
                            pIn->iSdst, pIn->nSdst);
       if( pDest->iSDParm2>0 ){
+        assert( sqlite3CursorBloomable(pParse, pDest->iSDParm, pIn->nSdst) );
         sqlite3VdbeAddOp4Int(v, OP_FilterAdd, pDest->iSDParm2, 0,
                              pIn->iSdst, pIn->nSdst);
         ExplainQueryPlan((pParse, 0, "CREATE BLOOM FILTER"));

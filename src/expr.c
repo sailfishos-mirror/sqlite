@@ -3740,6 +3740,8 @@ void sqlite3CodeRhsOfIN(
         addrBloom = sqlite3VdbeAddOp2(v, OP_Blob, 10000, regBloom);
         VdbeComment((v, "Bloom filter"));
         dest.iSDParm2 = regBloom;
+        sqlite3VdbeChangeP4(v, addr, (void *)pKeyInfo, P4_KEYINFO);
+        pKeyInfo = 0;
       }
       testcase( pSelect->selFlags & SF_Distinct );
       pCopy = sqlite3SelectDup(pParse->db, pSelect, 0);
@@ -3779,10 +3781,9 @@ void sqlite3CodeRhsOfIN(
     }else if( affinity==SQLITE_AFF_REAL ){
       affinity = SQLITE_AFF_NUMERIC;
     }
-    if( pKeyInfo ){
-      assert( sqlite3KeyInfoIsWriteable(pKeyInfo) );
-      pKeyInfo->aColl[0] = sqlite3ExprCollSeq(pParse, pExpr->pLeft);
-    }
+    assert( pKeyInfo!=0 );
+    assert( sqlite3KeyInfoIsWriteable(pKeyInfo) );
+    pKeyInfo->aColl[0] = sqlite3ExprCollSeq(pParse, pExpr->pLeft);
 
     /* Loop through each expression in <exprlist>. */
     r1 = sqlite3GetTempReg(pParse);
