@@ -3693,6 +3693,8 @@ void sqlite3CodeRhsOfIN(
   }
 #endif
   pKeyInfo = sqlite3KeyInfoAlloc(pParse->db, nVal, 1);
+  assert( pKeyInfo!=0 || pParse->nErr );
+  if( pKeyInfo==0 ) return;
 
   if( ExprUseXSelect(pExpr) ){
     /* Case 1:     expr IN (SELECT ...)
@@ -3717,6 +3719,19 @@ void sqlite3CodeRhsOfIN(
       sqlite3SelectDestInit(&dest, SRT_Set, iTab);
       dest.zAffSdst = exprINAffinity(pParse, pExpr);
       pSelect->iLimit = 0;
+      assert( pEList!=0 );
+      assert( pEList->nExpr>0 );
+      assert( sqlite3KeyInfoIsWriteable(pKeyInfo) );
+      for(i=0; i<nVal; i++){
+        Expr *p = sqlite3VectorFieldSubexpr(pLeft, i);
+        CollSeq *pColl;
+        pKeyInfo->aColl[i] = pColl = sqlite3BinaryCompareCollSeq(
+            pParse, p, pEList->a[i].pExpr
+        );
+        if( !sqlite3IsBinary(pColl) ){
+          allowBloom = 0;  /* tag-202607231411 */
+        }
+      }
       if( addrOnce
        && allowBloom
        && OptimizationEnabled(pParse->db, SQLITE_BloomFilter)
@@ -3727,7 +3742,6 @@ void sqlite3CodeRhsOfIN(
         dest.iSDParm2 = regBloom;
       }
       testcase( pSelect->selFlags & SF_Distinct );
-      testcase( pKeyInfo==0 ); /* Caused by OOM in sqlite3KeyInfoAlloc() */
       pCopy = sqlite3SelectDup(pParse->db, pSelect, 0);
       rc = pParse->db->mallocFailed ? 1 :sqlite3Select(pParse, pCopy, &dest);
       sqlite3SelectDelete(pParse->db, pCopy);
@@ -3744,16 +3758,6 @@ void sqlite3CodeRhsOfIN(
       if( rc ){
         sqlite3KeyInfoUnref(pKeyInfo);
         return;
-      }
-      assert( pKeyInfo!=0 ); /* OOM will cause exit after sqlite3Select() */
-      assert( pEList!=0 );
-      assert( pEList->nExpr>0 );
-      assert( sqlite3KeyInfoIsWriteable(pKeyInfo) );
-      for(i=0; i<nVal; i++){
-        Expr *p = sqlite3VectorFieldSubexpr(pLeft, i);
-        pKeyInfo->aColl[i] = sqlite3BinaryCompareCollSeq(
-            pParse, p, pEList->a[i].pExpr
-        );
       }
     }
   }else if( ALWAYS(pExpr->x.pList!=0) ){

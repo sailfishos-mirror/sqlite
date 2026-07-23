@@ -125,16 +125,16 @@ do_eqp_test 3.2 {
   `--SEARCH t0 USING AUTOMATIC PARTIAL COVERING INDEX (x=?)
 }
 # ^^^^^--- The key feature in the previous result is that no Bloom filter
-# is used.  In the following, a Bloom filter is used because the data type
-# is INT instead of TEXT.
+# is used because of the COLLATE rtrim.  In the following, a Bloom filter
+# is omitted because collating sequence is binary instead.
 do_execsql_test 3.3 {
-  CREATE TABLE t1(x INT COLLATE rtrim);
+  CREATE TABLE t1(x INT COLLATE binary);
   INSERT INTO t1(x) VALUES ('a'), ('b'), ('c');
   CREATE VIEW v1(y) AS SELECT DISTINCT x FROM t1;
-  SELECT count(*) FROM t1, v1 WHERE x='b ';
+  SELECT count(*) FROM t1, v1 WHERE x='b';
 } 3
 do_eqp_test 3.4 {
-  SELECT count(*) FROM t1, v1 WHERE x='b ';
+  SELECT count(*) FROM t1, v1 WHERE x='b';
 } {
   QUERY PLAN
   |--CO-ROUTINE v1

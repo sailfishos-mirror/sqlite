@@ -1978,3 +1978,15 @@ void sqlite3WhereTabFuncArgs(
     whereClauseInsert(pWC, pTerm, TERM_DYNAMIC);
   }
 }
+
+/*
+** Return true if the WhereLoop pLoop can be use a Bloom filter.
+** tag-202607231411
+*/
+int sqlite3WhereLoopBloomable(const WhereLoop *pLoop){
+  if( pLoop->wsFlags & WHERE_IPK ) return 1;
+  if( (pLoop->wsFlags & WHERE_INDEXED)!=0 ){
+    return sqlite3IndexBloomable(pLoop->u.btree.pIndex, pLoop->u.btree.nEq);
+  }
+  return 0;
+}

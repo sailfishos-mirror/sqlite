@@ -688,6 +688,10 @@ static Mem *out2Prerelease(Vdbe *p, VdbeOp *pOp){
 /*
 ** Compute a bloom filter hash using pOp->p4.i registers from aMem[] beginning
 ** with pOp->p3.  Return the hash.
+**
+** IMPORTANT RESTRICTION (tag-202607231411):  This hash is only valid if the
+** collating sequence for TEXT is BINARY. Hence, Bloom filters that use this
+** hash will not work for look-ups that use any other collating sequence.
 */
 static u64 filterHash(const Mem *aMem, const Op *pOp){
   int i, mx;
@@ -701,10 +705,18 @@ static u64 filterHash(const Mem *aMem, const Op *pOp){
     }else if( p->flags & MEM_Real ){
       h += sqlite3VdbeIntValue(p);
     }else if( p->flags & (MEM_Str|MEM_Blob) ){
-      /* All strings have the same hash and all blobs have the same hash,
-      ** though, at least, those hashes are different from each other and
-      ** from NULL. */
-      h += 4093 + (p->flags & (MEM_Str|MEM_Blob));
+      u64 x;
+      h += p->n;
+      if( p->n >= sizeof(x) ){
+        memcpy(&x, p->z, sizeof(x));
+        h += x;
+        memcpy(&x, p->z + p->n - sizeof(x), sizeof(x));
+        h += x;
+      }else{
+        x = 0;
+        memcpy(&x, p->z, p->n);
+        h += x;
+      }
     }
   }
   return h;
