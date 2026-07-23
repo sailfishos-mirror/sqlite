@@ -1,5 +1,5 @@
-C Improved\sBloom-filter\sinvariant\schecking.
-D 2026-07-23T18:55:12.383
+C New\stest\scases\sfor\sBloom\sfilter\suse\son\stext\skeys\sas\slong\sas\sthe\ncollating\ssequence\sis\sbinary.
+D 2026-07-23T20:23:04.256
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -939,7 +939,7 @@ F test/bind2.test 918bc35135f4141809ead7585909cde57d44db90a7a62aef540127148f91aa
 F test/bindxfer.test efecd12c580c14df5f4ad3b3e83c667744a4f7e0
 F test/bitvec.test 75894a880520164d73b1305c1c3f96882615e142
 F test/blob.test e7ac6c7d3a985cc4678c64f325292529a69ae252
-F test/bloom1.test dd9847746e1a52db2f19bc5c8cb751990b2eb04692aee6e8c9972b84cd4069bf
+F test/bloom1.test 1bb23039a13e9b93dae94d3819ffc5ed9017c634319f2bfc4bdb7f000875cfce
 F test/boundary1.tcl 6421b2d920d8b09539503a8673339d32f7609eb1
 F test/boundary1.test 66d7f4706ccdb42d58eafdb081de07b0eb42d77b
 F test/boundary2.tcl e34ef4e930cf1083150d4d2c603e146bd3b76bcb
@@ -2217,8 +2217,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 3013d6ab4afd4f63fa63a773778adcf07821cfcb33e3ae42752aea13fd2b6224
-R 0e1584e2f9d4a83856c66208401cbfea
+P f38f4167110df11ba54816932126f695dc6e114d4001d0261669807a55ad7966
+R 438ee1d912e98a29a406472f7bcf9770
 U drh
-Z 3049f8ec6b5a896c591d2da0158d3d82
+Z 755ec0c18f267274a2f24d11dbb024d2
 # Remove this line to create a well-formed Fossil manifest.
